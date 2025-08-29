@@ -1,0 +1,77 @@
+:root {    
+    --color-one-base: #019642;    
+    --color-two-base: #E60000;
+    --color-three-base: #2c2c2c; 
+
+	--color-one-rgb: 1,150,66; 
+	--color-two-rgb: 230,0,0; 
+	--color-three-rgb: 71,69,70;  
+	
+	--color-one-80: #66C56E;
+	--color-one-60: #8CD392;
+	--color-one-40: #B3E2B7; 
+	
+	--color-two-80: #E60000CC;
+	--color-two-60: #E6000099;
+	--color-two-40: #E6000066; 
+	
+	--color-three-80: #474546CC;
+	--color-three-60: #47454699;
+	--color-three-40: #47454638; 
+	
+    --color--grey: #b9b5af;
+    --color--grey--rgb: 185, 181, 175;
+
+	--nav-menu-hover: var(--color-two-base);
+ 
+	/* ================================ */ 
+ 
+
+	--bs-gray:#6c757d;--bs-gray-dark:#343a40;--bs-gray-100:#f8f9fa;--bs-gray-200:#e9ecef;--bs-gray-300:#dee2e6;--bs-gray-400:#ced4da;--bs-gray-500:#adb5bd;--bs-gray-600:#6c757d;--bs-gray-700:#495057;--bs-gray-800:#343a40;--bs-gray-900:#212529;--bs-primary:#0d6efd;--bs-secondary:#6c757d;--bs-success:#198754;--bs-info:#0dcaf0;--bs-warning:#F5842B;--bs-danger:#dc3545;--bs-light:#f8f9fa;--bs-dark:#212529;--bs-primary-rgb:13,110,253;--bs-secondary-rgb:108,117,125;--bs-success-rgb:25,135,84;--bs-info-rgb:13,202,240;--bs-warning-rgb:255,193,7;--bs-danger-rgb:220,53,69;--bs-light-rgb:248,249,250;--bs-dark-rgb:33,37,41;
+ 
+
+	--color-links-default: #0083ca;
+	--color-links: var(--color-one-base);
+	--color-links-active:  var(--color-two-base); 
+	
+    --ptl-color-menus-base: #87610b;
+    --ptl-color-menus-sticky: #4a535e;
+    --ptl-color-menus-sticky-active: #fc9c0d;
+
+	--ptl-blue: #1E3990; /* #0018ed; */ 
+    --ptl-yellow: 252, 179, 31;
+    --ptl-light: 243, 245, 250;
+    --ptl-orange: 255, 112, 0;
+    --ptl-links: #314076;
+
+
+	--gray-base: #4a535e;
+    --gray-light: #999999;
+    --ptl-brown: #794844;   
+    --ptl-brown-rgb: 177,132,29;
+   
+	--ptl-emblem: url('../image/logo-ciheb.png');
+
+	--font-times : 'Georgia', 'Times', 'Times New Roman'; 
+	--font-main: "Quicksand", "Roboto", 'Helvetica', 'Arial', sans-serif;   
+	--font-head: "Quicksand", "Roboto", 'Helvetica', 'Arial', sans-serif;   
+	/* --font-head: "Fira Sans Condensed", 'Arial', sans-serif;  */
+	--font-head-spacing: normal; /* -0.05em */
+	 
+	--form-focus-height: 60px;
+	--form-focus-control-height: 50px;
+	--screen-small-min: 1024px;
+	--screen-small-max: 1023px;
+
+	--width-menu-subs: 230px; 
+	--home-banner-height: 100vh;
+} 
+ 
+@media screen and (max-width: 786px) {
+:root{ --home-banner-height: 70vh; }
+}
+
+
+@media screen and (max-width: 1023px) {
+:root { --home-banner-height: 87vh; }
+}

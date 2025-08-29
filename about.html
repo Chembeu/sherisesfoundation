@@ -1,0 +1,1142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>About Us - SheRises Foundation</title>
+	<link rel="shortcut icon" type="image/x-icon" href="assets/image/logo.png">
+	
+	<!-- Stylesheets -->
+	<link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css" rel="stylesheet">
+	<link href="https://cdnjs.cloudflare.com/ajax/libs/themify-icons/0.1.2/css/themify-icons.css" rel="stylesheet">
+	<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+	<link async href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300..800;1,300..800&family=Quicksand:wght@400..700&display=swap" rel="stylesheet">
+	
+	<!-- Local Stylesheets -->
+	<link rel="stylesheet" href="assets/css/animate.css">
+	<link rel="stylesheet" href="assets/scripts/libs/aos.css">
+	<link rel="stylesheet" href="assets/css/vars.css">
+	<link rel="stylesheet" href="assets/css/base_system002e.css">  
+	<link rel="stylesheet" href="assets/css/main002e.css">  
+	<link rel="stylesheet" href="assets/css/main_navs002e.css">
+	<link rel="stylesheet" href="assets/css/responsive002e.css">
+	<link rel="stylesheet" href="assets/css/sdg-section.css">
+	<link rel="stylesheet" href="assets/css/partners-section.css">
+
+	<!-- Scripts -->
+	<script src="assets/scripts/modernizr-2.8.3-respond-1.4.2.min.js"></script>
+	<script src="assets/scripts/jquery-3.7.1.min.js"></script>
+	<script src="assets/scripts/jquery-migrate-3.5.2.min.js"></script>
+	<script nonce="kngn401" type="text/javascript">
+		jQuery.noConflict(); 
+		var mains_title = 'About Us - SheRises Foundation';
+	</script>
+</head>
+<body data-aos-easing="ease-out-back" data-aos-duration="1000" data-aos-delay="0" class="theme-home">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Header with Navigation</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/themify-icons/0.1.2/css/themify-icons.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <style>
+        .header-section {
+            background: #fff;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        
+       .top-header {
+            background-color: coral;
+            border-bottom: 1px solid #d1e7f7;
+            padding: 12px 0;
+            transition: all 0.3s ease;
+        }
+        
+        .top-header:hover {
+            background: #ddeffd;
+        }
+        
+        .left-info {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            gap: 20px;
+            justify-content: flex-start;
+        }
+        
+        .left-info li a {
+            color: #666;
+            text-decoration: none;
+            font-size: 14px;
+            display: flex;
+            align-items: center;
+            gap: 5px;
+        }
+        
+        .left-info li a:hover {
+            color: #007bff;
+        }
+        
+        .header-nav-links .navigation {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            gap: 20px;
+            justify-content: flex-end;
+        }
+        
+        .header-nav-links .navigation li a {
+            color: #666;
+            text-decoration: none;
+            font-size: 14px;
+            padding: 8px 15px;
+            border-radius: 4px;
+            transition: all 0.3s ease;
+        }
+        
+        /* .header-nav-links .navigation li a:hover,
+        .header-nav-links .navigation li a.active {
+             background: #007bff;
+            color: white;
+        } */
+        
+        .bottom-header {
+            padding: 15px 0;
+        }
+        
+        .site-branding img {
+            max-height: 60px;
+            width: auto;
+        }
+        
+        .main-menu .navigation {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            gap: 30px;
+            align-items: center;
+        }
+        
+        .main-menu .navigation li {
+            position: relative;
+        }
+        
+        .main-menu .navigation li a {
+            color: #333;
+            text-decoration: none;
+            font-weight: 500;
+            padding: 10px 0;
+            display: flex;
+            align-items: center;
+            gap: 5px;
+            transition: color 0.3s ease;
+        }
+        
+        .main-menu .navigation li a:hover {
+            color: #007bff;
+        }
+        
+        .main-menu .navigation li.has-dropdown > a::after {
+            content: '\f107';
+            font-family: 'Font Awesome 5 Free';
+            font-weight: 900;
+            margin-left: 5px;
+            font-size: 12px;
+        }
+        
+        .main-menu .navigation li .dropdown {
+            position: absolute;
+            top: 100%;
+            left: 0;
+            background: white;
+            min-width: 200px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+            opacity: 0;
+            visibility: hidden;
+            transform: translateY(10px);
+            transition: all 0.3s ease;
+            z-index: 1000;
+            border-radius: 5px;
+            padding: 10px 0;
+        }
+        
+        .main-menu .navigation li:hover .dropdown {
+            opacity: 1;
+            visibility: visible;
+            transform: translateY(0);
+        }
+        
+        .main-menu .navigation li .dropdown li {
+            width: 100%;
+        }
+        
+        .main-menu .navigation li .dropdown li a {
+            padding: 10px 20px;
+            color: #666;
+            font-weight: normal;
+            border-bottom: 1px solid #f0f0f0;
+            display: block;
+        }
+        
+        .main-menu .navigation li .dropdown li:last-child a {
+            border-bottom: none;
+        }
+        
+        .main-menu .navigation li .dropdown li a:hover {
+            background: #f8f9fa;
+            color: #007bff;
+        }
+        
+        .navbar-toggler {
+            border: none;
+            background: #007bff;
+            color: white;
+            padding: 8px 12px;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        
+        .mobile-menu {
+            position: fixed;
+            top: 0;
+            right: -100%;
+            width: 300px;
+            height: 100vh;
+            background: white;
+            z-index: 9999;
+            transition: right 0.3s ease;
+        }
+        
+        .mobile-menu.active {
+            right: 0;
+        }
+        
+        .menu-backdrop {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100vw;
+            height: 100vh;
+            background: rgba(0,0,0,0.5);
+            z-index: -1;
+        }
+        
+        .menu-box {
+            height: 100%;
+            overflow-y: auto;
+        }
+        
+        .nav-logo {
+            padding: 20px;
+            border-bottom: 1px solid #e9ecef;
+            display: flex;
+            justify-content: flex-end;
+        }
+        
+        .close-btn {
+            font-size: 20px;
+            cursor: pointer;
+            color: #333;
+        }
+        
+        .menu-outer {
+            padding: 20px;
+        }
+        
+        #menu_mobile {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+        
+        #menu_mobile li {
+            margin-bottom: 10px;
+        }
+        
+        #menu_mobile li a {
+            color: #333;
+            text-decoration: none;
+            padding: 10px 0;
+            display: block;
+            border-bottom: 1px solid #f0f0f0;
+            font-weight: 500;
+        }
+        
+        #menu_mobile li a:hover {
+            color: #007bff;
+        }
+        
+        @media (max-width: 768px) {
+            .left-info {
+                justify-content: center;
+                flex-wrap: wrap;
+            }
+            
+            .header-nav-links {
+                display: none;
+            }
+            
+            .main-menu .navigation {
+                display: none;
+            }
+        }
+        
+        .get-involved-btn {
+            background: #28a745;
+            color: white;
+            padding: 8px 20px;
+            border-radius: 4px;
+            text-decoration: none;
+            font-weight: 600;
+            transition: background 0.3s ease;
+        }
+        
+        .get-involved-btn:hover {
+            background: #218838;
+            color: white;
+        }
+		.footer {
+    background-color: var(--background-white);
+    color: var(--text-primary);
+    padding: var(--spacing-xxxl) 0 0;
+    box-shadow: 0 -2px 20px rgba(0, 0, 0, 0.05);
+    width: 100%;
+    margin-top: 80px;
+    opacity: 0;
+    animation: fadeIn 1s ease-out forwards;
+    animation-delay: 0.2s;
+}
+
+.footer-container {
+    width: 95%;
+    margin: 0 auto;
+}
+
+.footer-top {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--spacing-xxl);
+    padding-bottom: var(--spacing-xxl);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.footer-logo {
+    flex: 1;
+    min-width: 300px;
+}
+
+.footer-mission {
+    margin: var(--spacing-lg) 0;
+    line-height: 1.6;
+    color: var(--text-muted);
+    max-width: 500px;
+}
+
+.footer-links {
+    flex: 2;
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--spacing-xl);
+}
+
+.links-column {
+    flex: 1;
+    min-width: 180px;
+}
+
+.links-title {
+    font-size: 1.2rem;
+    margin-bottom: var(--spacing-lg);
+    color: var(--text-primary);
+    position: relative;
+    padding-bottom: var(--spacing-sm);
+}
+
+.links-title::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 40px;
+    height: 2px;
+    background-color: var(--accent-color);
+}
+
+.links-list {
+    list-style: none;
+}
+
+.links-list li {
+    margin-bottom: 12px;
+}
+
+.links-list a {
+    color: var(--text-muted);
+    text-decoration: none;
+    transition: all var(--transition-normal);
+    display: inline-block;
+}
+
+.links-list a:hover {
+    color: var(--accent-color);
+    transform: translateX(5px);
+}
+
+/* Contact Info */
+.contact-info {
+    margin-top: var(--spacing-xs);
+}
+
+.contact-info li {
+    display: flex;
+    align-items: center;
+    margin-bottom: var(--spacing-md);
+    color: var(--text-muted);
+}
+
+.contact-info .icon {
+    width: 35px;
+    height: 35px;
+    background: var(--primary-color);
+    border-radius: var(--radius-full);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 12px;
+}
+
+.contact-info .icon i {
+    color: white;
+    font-size: 1rem;
+}
+
+.contact-info a {
+    color: var(--primary-color);
+    text-decoration: none;
+    transition: color var(--transition-normal);
+}
+
+.contact-info a:hover {
+    color: var(--primary-hover);
+}
+
+/* Footer Bottom */
+.footer-bottom {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    padding: var(--spacing-xl) 0;
+}
+
+.footer-legal {
+    color: var(--text-secondary);
+    font-size: 0.9rem;
+}
+
+.legal-links {
+    display: flex;
+    gap: var(--spacing-lg);
+    margin-top: var(--spacing-sm);
+}
+
+.legal-links a {
+    color: var(--text-secondary);
+    text-decoration: none;
+    transition: color var(--transition-normal);
+    font-size: 0.9rem;
+}
+
+.legal-links a:hover {
+    color: var(--text-primary);
+}
+
+/* Newsletter */
+.footer-newsletter {
+    max-width: 400px;
+}
+
+.footer-newsletter h4 {
+    margin-bottom: var(--spacing-md);
+    font-weight: 500;
+    color: var(--text-primary);
+}
+
+.newsletter-form {
+    display: flex;
+    gap: var(--spacing-sm);
+}
+
+.newsletter-form input {
+    flex: 1;
+    padding: 12px var(--spacing-md);
+    border: 1px solid #ddd;
+    border-radius: var(--radius-sm);
+    background-color: var(--background-white);
+    color: var(--text-primary);
+    font-family: inherit;
+}
+
+.newsletter-form button {
+    padding: 12px var(--spacing-lg);
+    background-color: var(--primary-color);
+    color: white;
+    border: none;
+    border-radius: var(--radius-sm);
+    cursor: pointer;
+    font-weight: 600;
+    transition: background-color var(--transition-normal);
+}
+
+.newsletter-form button:hover {
+    background-color: var(--primary-hover);
+}
+
+/* ===== ANIMATIONS ===== */
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes float {
+    0%, 100% { transform: translateY(0px); }
+    50% { transform: translateY(-10px); }
+}
+
+@keyframes pulse {
+    0%, 100% { transform: scale(1); }
+    50% { transform: scale(1.05); }
+}
+
+@keyframes gradientFlow {
+    0%, 100% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+}
+
+@keyframes slideInFromLeft {
+    from { transform: translateX(-50px); opacity: 0; }
+    to { transform: translateX(0); opacity: 1; }
+}
+
+@keyframes slideInFromRight {
+    from { transform: translateX(50px); opacity: 0; }
+    to { transform: translateX(0); opacity: 1; }
+}
+
+@keyframes fadeInUp {
+    from { 
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to { 
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Story Content Animations */
+.story-title {
+    animation: fadeInUp 0.8s ease-out forwards;
+    animation-delay: 0.2s;
+    opacity: 0;
+}
+
+.story-text {
+    animation: fadeInUp 0.8s ease-out forwards;
+    animation-delay: 0.4s;
+    opacity: 0;
+}
+
+.story-paragraph {
+    animation: fadeInUp 0.8s ease-out forwards;
+    animation-delay: 0.6s;
+    opacity: 0;
+}
+
+.cta-buttons {
+    animation: fadeInUp 0.8s ease-out forwards;
+    animation-delay: 0.8s;
+    opacity: 0;
+}
+
+/* ===== RESPONSIVE DESIGN ===== */
+
+/* Tablet Styles */
+@media (max-width: 768px) {
+    /* Navigation */
+    .nav-menu {
+        display: none;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        background-color: var(--background-white);
+        flex-direction: column;
+        gap: 0;
+        box-shadow: 0 2px 10px var(--shadow-light);
+        z-index: 1000;
+        max-height: 0;
+        opacity: 0;
+        overflow: hidden;
+    }
+
+    .nav-menu.active {
+        display: flex;
+        max-height: 500px;
+        opacity: 1;
+    }
+
+    .nav-item {
+        width: 100%;
+        text-align: center;
+        border-bottom: 1px solid var(--border-light);
+    }
+
+    .nav-link {
+        display: block;
+        padding: 12px var(--spacing-md);
+        width: 100%;
+    }
+
+    .mobile-menu-btn {
+        display: flex;
+    }
+
+    .social-icons {
+        gap: 6px;
+    }
+
+    .social-icon {
+        width: 32px;
+        height: 32px;
+        font-size: 14px;
+    }
+
+    .nav-container {
+        width: 90%;
+        padding: var(--spacing-md) 8px;
+    }
+
+    /* Main Content */
+    .main-content {
+        width: 90%;
+        padding: var(--spacing-xl) 12px;
+    }
+
+    .story-section {
+        flex-direction: column;
+        gap: var(--spacing-xl);
+    }
+
+    .story-title {
+        font-size: 2.5rem;
+        margin-bottom: 25px;
+        animation: fadeIn 0.8s ease-out;
+    }
+
+    .story-text {
+        padding-left: 50px;
+    }
+
+    .story-initial {
+        font-size: 3rem;
+        top: -5px;
+    }
+
+    .cta-buttons {
+        flex-direction: column;
+        gap: 12px;
+    }
+
+    .btn {
+        padding: var(--spacing-sm) var(--spacing-lg);
+        justify-content: center;
+    }
+
+    .story-visual {
+        min-height: 300px;
+        order: -1;
+        animation: fadeIn 0.8s ease-out;
+    }
+
+    /* SDG Section */
+    .sdg-section {
+        padding: var(--spacing-xxl) 0;
+    }
+    
+    .sdg-title {
+        font-size: 2rem;
+    }
+    
+    .sdg-subtitle {
+        font-size: 1rem;
+        margin-bottom: 25px;
+    }
+    
+    .sdg-grid {
+        grid-template-columns: 1fr;
+        gap: var(--spacing-md);
+    }
+
+    .sdg-card {
+        animation-delay: 0s !important;
+    }
+
+    /* Footer */
+    .footer-top {
+        flex-direction: column;
+        gap: 25px;
+    }
+    
+    .footer-logo, .links-column {
+        min-width: 100%;
+    }
+    
+    .footer-bottom {
+        flex-direction: column;
+        gap: var(--spacing-md);
+        text-align: center;
+    }
+    
+    .legal-links {
+        justify-content: center;
+    }
+    
+    .footer-newsletter {
+        width: 100%;
+    }
+    
+    .newsletter-form {
+        flex-direction: column;
+    }
+}
+
+/* Mobile Styles */
+@media (max-width: 480px) {
+    .story-title {
+        font-size: 2rem;
+        margin-bottom: var(--spacing-lg);
+    }
+
+    .story-text {
+        padding-left: 35px;
+    }
+
+    .story-initial {
+        font-size: 2.5rem;
+    }
+
+    .story-paragraph {
+        font-size: 1rem;
+    }
+
+    .sdg-section {
+        padding: var(--spacing-xl) 0;
+    }
+    
+    .sdg-title {
+        font-size: 1.8rem;
+    }
+}
+
+/* ===== UTILITY CLASSES ===== */
+.text-center { text-align: center; }
+.text-left { text-align: left; }
+.text-right { text-align: right; }
+
+.mb-0 { margin-bottom: 0; }
+.mb-sm { margin-bottom: var(--spacing-sm); }
+.mb-md { margin-bottom: var(--spacing-md); }
+.mb-lg { margin-bottom: var(--spacing-lg); }
+
+.mt-0 { margin-top: 0; }
+.mt-sm { margin-top: var(--spacing-sm); }
+.mt-md { margin-top: var(--spacing-md); }
+.mt-lg { margin-top: var(--spacing-lg); }
+
+.hidden { display: none; }
+.visible { display: block; }
+
+.reveal {
+    position: relative;
+    opacity: 0;
+    transform: translateY(30px);
+    transition: all 1s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.reveal.active {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.scroll-hidden {
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(50px);
+    transition: opacity 0.6s ease-out, transform 1.2s ease-out;
+    will-change: opacity, visibility, transform;
+}
+
+.scroll-visible {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+}
+    </style>
+</head>
+<body>
+    <header id="header" class="header-section">
+        <div class="top-header">
+            <div class="container-lg">
+                <div class="top-content-wrap row">
+                    <div class="col-lg-5 col-sm-12 px-sm-1">
+                        <ul class="left-info text-right text-sm-center">
+                            <li><a href="mailto:info@sherisesfoundation.co.ke" class="text-lowercase"><i class="ti-email"></i>info@sherisesfoundation.co.ke</a></li>
+                            <li><a href="tel:+254701776098"><i class="ti-mobile"></i>+(254)701776098</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="bottom-header">
+            <div class="container-lg">
+                <div class="bottom-content-wrap row">
+                    <div class="col-md-2 col-sm-7 col-9">
+                        <div class="site-branding">
+                            <a href="index.html"><img src="assets/image/logo.png" alt="Sherises Foundation"></a>
+                        </div>
+                    </div>
+                    <div class="col-md-10 col-sm-5 col-3">
+                        <nav class="navbar navbar-expand-xl navbar-wrap d-flex pe-4xx">
+                            
+                            <div class="collapse navbar-collapse main-menu text-right-lg" id="navbarSupportedContent">
+                                <ul class="nav navbar-nav navigation nav-mega-menu" aria-label="Main Navigation" data-auto-id="menu_main" id="menu_main" data-call="menu_main" data-sec="1" data-cat="nav_top" data-active="1">
+                                    <li class="has-dropdown">
+                                        <a href="#who-we-are">Who We Are</a>
+                                        <ul class="dropdown">
+                                            <li><a href="#about">About Us</a></li>
+                                            <li><a href="#mission">Our Mission</a></li>
+                                            <li><a href="#team">Our Team</a></li>
+                                            <li><a href="#board">Board of Directors</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="has-dropdown">
+                                        <a href="#what-we-do">What We Do</a>
+                                        <ul class="dropdown">
+                                            <li><a href="#programs">Our Programs</a></li>
+                                            <li><a href="#services">Services</a></li>
+                                            <li><a href="#projects">Current Projects</a></li>
+                                            <li><a href="#partnerships">Partnerships</a></li>
+                                        </ul>
+                                    </li>
+                                    <li><a href="#discover-impact">Discover Our Impact</a></li>
+                                    <li class="has-dropdown">
+                                        <a href="#programs">Our Programs</a>
+                                        <ul class="dropdown">
+                                            <li><a href="#education">Education</a></li>
+                                            <li><a href="#healthcare">Healthcare</a></li>
+                                            <li><a href="#community">Community Development</a></li>
+                                            <li><a href="#youth">Youth Empowerment</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="has-dropdown">
+                                        <a href="#media-resources">Media + Resources</a>
+                                        <ul class="dropdown">
+                                            <li><a href="#news">News & Updates</a></li>
+                                            <li><a href="#publications">Publications</a></li>
+                                            <li><a href="#gallery">Photo Gallery</a></li>
+                                            <li><a href="#downloads">Downloads</a></li>
+                                        </ul>
+                                    </li>
+                                </ul>  
+                            </div>
+
+                            <!-- Mobile Menu  -->
+                            <a class="navbar-toggler mobile-nav-toggler" onclick="toggleMobileMenu()">
+                                <span class="icon flaticon-menu-1 fas fa-bars"></span>
+                            </a>
+                            <div class="mobile-menu" id="mobileMenu">
+                                <div class="menu-backdrop" onclick="toggleMobileMenu()"></div>
+                                <nav class="menu-box">
+                                    <div class="nav-logo">
+                                        <a class="close-btn" onclick="toggleMobileMenu()" aria-label="Close Menu">
+                                            <span class="fas fa-times"></span>
+                                        </a>
+                                    </div>
+                                    <div class="menu-outer">
+                                        <ul class="" id="menu_mobile">
+                                            <li><a href="#who-we-are">Who We Are</a></li>
+                                            <li><a href="#what-we-do">What We Do</a></li>
+                                            <li><a href="#discover-impact">Discover Our Impact</a></li>
+                                            <li><a href="#programs">Our Programs</a></li>
+                                            <li><a href="#media-resources">Media + Resources</a></li>
+                                            <li><a href="#contact">Contact Us</a></li>
+                                            <li><a href="#opportunities">Opportunities</a></li>
+                                            <li><a href="#get-involved" class="get-involved-btn">GET INVOLVED</a></li>
+                                        </ul>
+                                    </div>
+                                </nav>
+                            </div> 
+                            <!-- End Mobile Menu -->
+                        </nav>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section class="hero-section position-relative" data-aos="fade-up" style="background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('assets/image/gallery/health-1.jpeg') no-repeat center center; background-size: cover; height: 60vh; display: flex; align-items: center;">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 text-white">
+                        <h1 class="display-4 fw-bold mb-4">About SheRises Foundation</h1>
+                        <p class="lead">Empowering communities and transforming lives through sustainable development initiatives.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Story Section -->
+        <section class="story-section py-5" data-aos="fade-up">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-lg-6" data-aos="fade-right">
+                        <h2 class="story-title mb-4">Our Story</h2>
+                        <div class="story-text position-relative">
+                            <span class="story-initial">S</span>
+                            <p class="story-paragraph">
+                                heRises Foundation was established in 2025 with a vision to create lasting positive change in communities across Kenya. Our journey began with a simple yet powerful idea: that sustainable development and community empowerment go hand in hand.
+                            </p>
+                            <p class="mt-4">
+                                Through our dedicated programs in education, healthcare, and community development, we've touched countless lives and continue to work tirelessly towards creating a more equitable and sustainable future for all.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-lg-6" data-aos="fade-left">
+                        <div class="story-visual position-relative">
+                            <img src="assets/image/gallery/board-1-1.jpg" alt="SheRises Foundation Team" class="img-fluid rounded-3 shadow-lg">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Mission & Vision Section -->
+        <section class="mission-vision-section py-5 bg-light">
+            <div class="container">
+                <div class="row g-4">
+                    <div class="col-md-6" data-aos="fade-up">
+                        <div class="mission-card h-100 p-4 bg-white rounded-3 shadow-sm">
+                            <div class="icon-wrapper mb-4">
+                                <i class="fas fa-bullseye fa-2x text-primary"></i>
+                            </div>
+                            <h3 class="mb-3">Our Mission</h3>
+                            <p>To empower communities through sustainable development initiatives, quality education, and accessible healthcare while promoting environmental consciousness and gender equality.</p>
+                        </div>
+                    </div>
+                    <div class="col-md-6" data-aos="fade-up" data-aos-delay="100">
+                        <div class="vision-card h-100 p-4 bg-white rounded-3 shadow-sm">
+                            <div class="icon-wrapper mb-4">
+                                <i class="fas fa-eye fa-2x text-primary"></i>
+                            </div>
+                            <h3 class="mb-3">Our Vision</h3>
+                            <p>A world where every community thrives through sustainable development, equal opportunities, and access to quality education and healthcare services.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Values Section -->
+        <section class="values-section py-5">
+            <div class="container">
+                <h2 class="text-center mb-5" data-aos="fade-up">Our Core Values</h2>
+                <div class="row g-4">
+                    <div class="col-md-3" data-aos="fade-up">
+                        <div class="value-card text-center p-4">
+                            <div class="icon-wrapper mb-3">
+                                <i class="fas fa-heart fa-2x text-danger"></i>
+                            </div>
+                            <h4>Compassion</h4>
+                            <p>We lead with empathy and understanding in all our initiatives.</p>
+                        </div>
+                    </div>
+                    <div class="col-md-3" data-aos="fade-up" data-aos-delay="100">
+                        <div class="value-card text-center p-4">
+                            <div class="icon-wrapper mb-3">
+                                <i class="fas fa-handshake fa-2x text-success"></i>
+                            </div>
+                            <h4>Integrity</h4>
+                            <p>We maintain the highest standards of honesty and transparency.</p>
+                        </div>
+                    </div>
+                    <div class="col-md-3" data-aos="fade-up" data-aos-delay="200">
+                        <div class="value-card text-center p-4">
+                            <div class="icon-wrapper mb-3">
+                                <i class="fas fa-lightbulb fa-2x text-warning"></i>
+                            </div>
+                            <h4>Innovation</h4>
+                            <p>We seek creative solutions to community challenges.</p>
+                        </div>
+                    </div>
+                    <div class="col-md-3" data-aos="fade-up" data-aos-delay="300">
+                        <div class="value-card text-center p-4">
+                            <div class="icon-wrapper mb-3">
+                                <i class="fas fa-users fa-2x text-info"></i>
+                            </div>
+                            <h4>Collaboration</h4>
+                            <p>We believe in the power of working together.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Impact Numbers Section -->
+        <section class="impact-section py-5 bg-primary text-white">
+            <div class="container">
+                <div class="row text-center g-4">
+                    <div class="col-md-3" data-aos="fade-up">
+                        <div class="impact-card">
+                            <h2 class="display-4 fw-bold mb-2">500+</h2>
+                            <p class="mb-0">Lives Impacted</p>
+                        </div>
+                    </div>
+                    <div class="col-md-3" data-aos="fade-up" data-aos-delay="100">
+                        <div class="impact-card">
+                            <h2 class="display-4 fw-bold mb-2">10</h2>
+                            <p class="mb-0">Communities Served</p>
+                        </div>
+                    </div>
+                    <div class="col-md-3" data-aos="fade-up" data-aos-delay="200">
+                        <div class="impact-card">
+                            <h2 class="display-4 fw-bold mb-2">15</h2>
+                            <p class="mb-0">Active Projects</p>
+                        </div>
+                    </div>
+                    <div class="col-md-3" data-aos="fade-up" data-aos-delay="300">
+                        <div class="impact-card">
+                            <h2 class="display-4 fw-bold mb-2">25</h2>
+                            <p class="mb-0">Team Members</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CTA Section -->
+        <section class="cta-section py-5">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-lg-8 text-center" data-aos="fade-up">
+                        <h2 class="mb-4">Join Us in Making a Difference</h2>
+                        <p class="mb-4">Together, we can create lasting positive change in our communities.</p>
+                        <div class="cta-buttons d-flex justify-content-center gap-3">
+                            <a href="#volunteer" class="btn btn-primary btn-lg">Volunteer With Us</a>
+                            <a href="#donate" class="btn btn-outline-primary btn-lg">Make a Donation</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-top">
+                <div class="footer-logo">
+                    <img src="assets/image/logo.png" alt="SheRises Foundation" style="max-width: 200px;">
+                    <p class="footer-mission">
+                        Empowering communities through sustainable development, education, and healthcare initiatives.
+                    </p>
+                </div>
+                
+                <div class="footer-links">
+                    <div class="links-column">
+                        <h4 class="links-title">Quick Links</h4>
+                        <ul class="links-list">
+                            <li><a href="#about">About Us</a></li>
+                            <li><a href="#programs">Our Programs</a></li>
+                            <li><a href="#impact">Our Impact</a></li>
+                            <li><a href="#get-involved">Get Involved</a></li>
+                        </ul>
+                    </div>
+                    
+                    <div class="links-column">
+                        <h4 class="links-title">Programs</h4>
+                        <ul class="links-list">
+                            <li><a href="#education">Education</a></li>
+                            <li><a href="#healthcare">Healthcare</a></li>
+                            <li><a href="#community">Community Development</a></li>
+                            <li><a href="#youth">Youth Empowerment</a></li>
+                        </ul>
+                    </div>
+                    
+                    <div class="links-column">
+                        <h4 class="links-title">Contact Info</h4>
+                        <ul class="contact-info links-list">
+                            <li>
+                                <div class="icon">
+                                    <i class="ti-location-pin"></i>
+                                </div>
+                                <span>Nairobi, Kenya</span>
+                            </li>
+                            <li>
+                                <div class="icon">
+                                    <i class="ti-email"></i>
+                                </div>
+                                <a href="mailto:info@sherisesfoundation.co.ke">info@sherisesfoundation.co.ke</a>
+                            </li>
+                            <li>
+                                <div class="icon">
+                                    <i class="ti-mobile"></i>
+                                </div>
+                                <a href="tel:+254701776098">+(254) 701 776 098</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <div class="footer-legal">
+                    <p>&copy; 2024 SheRises Foundation. All Rights Reserved.</p>
+                    <div class="legal-links">
+                        <a href="#privacy">Privacy Policy</a>
+                        <a href="#terms">Terms of Use</a>
+                        <a href="#sitemap">Sitemap</a>
+                    </div>
+                </div>
+                
+                <div class="footer-newsletter">
+                    <h4>Subscribe to Our Newsletter</h4>
+                    <form class="newsletter-form">
+                        <input type="email" placeholder="Enter your email">
+                        <button type="submit">Subscribe</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="assets/scripts/libs/aos.js"></script>
+    <script src="assets/scripts/bootstrap/bootstrap.5.3.3.bundle.min.js"></script>
+    <script>
+        // Initialize AOS
+        AOS.init();
+
+        // Mobile Menu Toggle
+        function toggleMobileMenu() {
+            const mobileMenu = document.getElementById('mobileMenu');
+            mobileMenu.classList.toggle('active');
+        }
+    </script>
+</body>
+</html>

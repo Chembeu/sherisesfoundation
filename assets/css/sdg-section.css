@@ -1,0 +1,217 @@
+.sdg-section {
+    padding: 80px 0;
+    background-color: #e6f7f7; /* Soft accent, matches brand and other sectio/* Card color variations with official UN SDG colors */
+.sdg-blue {
+    background: #DDA63A; /* SDG 2 Zero Hunger */
+    color: #000;
+}
+
+.sdg-blue-alt {
+    background: #FF3A21; /* SDG 5 Gender Equality */
+    color: #fff;
+}
+
+.sdg-gray {
+    background: #DD1367; /* SDG 10 Reduced Inequalities */
+    color: #fff;
+}
+
+.sdg-dark {
+    background: #3F7E44; /* SDG 13 Climate Action */
+    color: #fff;
+}align: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.sdg-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.sdg-title {
+    font-size: 2.5rem;
+    color: var(--color-one-base);
+    margin: 0 auto 15px;
+    font-weight: 600;
+    position: relative;
+    padding-bottom: 15px;
+    text-align: center;
+    max-width: 800px;
+    display: block;
+}
+
+.sdg-title::after {
+    content: '';
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    transform: translateX(-50%);
+    width: 60px;
+    height: 3px;
+    background-color: var(--color-two-base);
+}
+
+.sdg-subtitle {
+    font-size: 1.1rem;
+    color: #666;
+    margin-bottom: 50px;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.sdg-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 30px;
+    margin-top: 40px;
+}
+
+.sdg-card {
+    border-radius: 15px;
+    padding: 30px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    text-align: left;
+    animation: fadeInUp 0.8s ease-out forwards;
+    opacity: 0;
+}
+
+.sdg-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.12);
+}
+
+.sdg-icon {
+    margin-bottom: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.sdg-icon img {
+    width: 80px;
+    height: 80px;
+    object-fit: contain;
+    background: white;
+    border-radius: 50%;
+    padding: 10px;
+}
+
+.sdg-content {
+    text-align: center;
+}
+
+.sdg-number {
+    font-size: 1.4rem;
+    margin-bottom: 15px;
+    font-weight: 600;
+}
+
+.sdg-description {
+    font-size: 1rem;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+.sdg-btn {
+    display: inline-block;
+    padding: 10px 25px;
+    background-color: rgba(255, 255, 255, 0.2);
+    color: inherit;
+    text-decoration: none;
+    border-radius: 25px;
+    transition: all 0.3s ease;
+    font-weight: 500;
+    border: 2px solid rgba(255, 255, 255, 0.6);
+}
+
+.sdg-btn:hover {
+    background-color: rgba(255, 255, 255, 0.3);
+    border-color: rgba(255, 255, 255, 0.8);
+    color: inherit;
+}
+
+/* Card color variations - Using official UN SDG colors */
+.sdg-blue {
+    border-top: 4px solid #DDA63A; /* SDG 2 Zero Hunger - Official color */
+}
+
+.sdg-blue-alt {
+    border-top: 4px solid #FF3A21; /* SDG 5 Gender Equality - Official color */
+}
+
+.sdg-gray {
+    border-top: 4px solid #DD1367; /* SDG 10 Reduced Inequalities - Official color */
+}
+
+.sdg-dark {
+    border-top: 4px solid #3F7E44; /* SDG 13 Climate Action - Official color */
+}
+
+/* Animations */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Animation delays for cards */
+.sdg-card:nth-child(1) { animation-delay: 0.2s; }
+.sdg-card:nth-child(2) { animation-delay: 0.4s; }
+.sdg-card:nth-child(3) { animation-delay: 0.6s; }
+.sdg-card:nth-child(4) { animation-delay: 0.8s; }
+
+/* Responsive styles */
+@media (max-width: 768px) {
+    .sdg-section {
+        padding: 60px 0;
+    }
+    
+    .sdg-title {
+        font-size: 2rem;
+    }
+    
+    .sdg-subtitle {
+        font-size: 1rem;
+        margin-bottom: 30px;
+    }
+    
+    .sdg-grid {
+        gap: 20px;
+    }
+    
+    .sdg-card {
+        padding: 25px;
+    }
+    
+    .sdg-number {
+        font-size: 1.2rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .sdg-section {
+        padding: 40px 0;
+    }
+    
+    .sdg-title {
+        font-size: 1.8rem;
+    }
+    
+    .sdg-card {
+        padding: 20px;
+    }
+    
+    .sdg-icon img {
+        width: 60px;
+        height: 60px;
+    }
+}

@@ -1,0 +1,1006 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>What We Do - SheRises Foundation</title>
+    <link rel="shortcut icon" type="image/x-icon" href="assets/image/logo.png">
+    
+    <!-- External Stylesheets -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&family=Quicksand:wght@400;600;700&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" rel="stylesheet">
+    
+    <style>
+        /* CSS Custom Properties */
+        :root {
+            --primary-color: #09cddb;
+            --secondary-color: #e74c3c;
+            --accent-color: #45b7af;
+            --dark-color: #2d3436;
+            --light-color: #f8f9fa;
+            --text-color: #2d3436;
+            --text-light: #636e72;
+            --white: #ffffff;
+            
+            --shadow-sm: 0 2px 4px rgba(0,0,0,0.1);
+            --shadow-md: 0 4px 6px rgba(0,0,0,0.1);
+            --shadow-lg: 0 10px 15px rgba(0,0,0,0.1);
+            
+            --spacing-xs: 0.5rem;
+            --spacing-sm: 1rem;
+            --spacing-md: 1.5rem;
+            --spacing-lg: 2rem;
+            --spacing-xl: 3rem;
+            
+            --border-radius: 0.75rem;
+            --transition: 0.3s ease;
+        }
+
+        /* Base Styles */
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Roboto', sans-serif;
+            color: var(--text-color);
+            line-height: 1.6;
+            overflow-x: hidden;
+        }
+
+        h1, h2, h3, h4, h5, h6 {
+            font-family: 'Quicksand', sans-serif;
+            font-weight: 700;
+            line-height: 1.3;
+        }
+
+        /* Header Styles */
+        .header {
+            background: var(--white);
+            box-shadow: var(--shadow-sm);
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        .top-header {
+            background: var(--primary-color);
+            padding: 12px 0;
+            font-size: 0.875rem;
+        }
+
+        .top-header a {
+            color: var(--dark-color);
+            text-decoration: none;
+            display: flex;
+            align-items: center;
+            gap: 5px;
+            transition: color var(--transition);
+        }
+
+        .top-header a:hover {
+            color: var(--white);
+        }
+
+        .navbar {
+            padding: 15px 0;
+        }
+
+        .navbar-brand img {
+            max-height: 60px;
+            width: auto;
+        }
+
+        .nav-link {
+            color: var(--dark-color) !important;
+            font-weight: 500;
+            padding: 10px 15px !important;
+            transition: color var(--transition);
+            position: relative;
+        }
+
+        .nav-link:hover {
+            color: var(--primary-color) !important;
+        }
+
+        .nav-link.get-involved {
+            background: var(--primary-color);
+            color: var(--white) !important;
+            border-radius: var(--border-radius);
+            padding: 8px 20px !important;
+        }
+
+        .nav-link.get-involved:hover {
+            background: var(--accent-color);
+            transform: translateY(-2px);
+        }
+
+        /* Hero Section */
+        .hero {
+            min-height: 70vh;
+            background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), 
+                        url('assets/image/gallery/climate.png') center/cover;
+            display: flex;
+            align-items: center;
+            color: var(--white);
+            position: relative;
+        }
+
+        .hero-content h1 {
+            font-size: clamp(2.5rem, 5vw, 4rem);
+            margin-bottom: var(--spacing-md);
+        }
+
+        .hero-content .lead {
+            font-size: 1.25rem;
+            margin-bottom: var(--spacing-xl);
+        }
+
+        .scroll-indicator {
+            position: absolute;
+            bottom: 30px;
+            left: 50%;
+            transform: translateX(-50%);
+            color: var(--white);
+            font-size: 1.5rem;
+            cursor: pointer;
+            animation: bounce 2s infinite;
+        }
+
+        @keyframes bounce {
+            0%, 20%, 50%, 80%, 100% { transform: translateX(-50%) translateY(0); }
+            40% { transform: translateX(-50%) translateY(-10px); }
+            60% { transform: translateX(-50%) translateY(-5px); }
+        }
+
+        /* Section Styles */
+        .section {
+            padding: var(--spacing-xl) 0;
+        }
+
+        .section-title {
+            font-size: 2.5rem;
+            text-align: center;
+            margin-bottom: var(--spacing-lg);
+            position: relative;
+        }
+
+        .section-title::after {
+            content: '';
+            position: absolute;
+            bottom: -10px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 80px;
+            height: 4px;
+            background: var(--primary-color);
+            border-radius: 2px;
+        }
+
+        /* Card Components */
+        .program-card {
+            background: var(--white);
+            border-radius: var(--border-radius);
+            overflow: hidden;
+            box-shadow: var(--shadow-md);
+            transition: transform var(--transition), box-shadow var(--transition);
+            height: 100%;
+            margin-bottom: var(--spacing-lg);
+        }
+
+        .program-card:hover {
+            transform: translateY(-5px);
+            box-shadow: var(--shadow-lg);
+        }
+
+        .program-card img {
+            height: 220px;
+            width: 100%;
+            object-fit: cover;
+            transition: transform var(--transition);
+        }
+
+        .program-card:hover img {
+            transform: scale(1.05);
+        }
+
+        .program-card .card-body {
+            padding: var(--spacing-lg);
+            display: flex;
+            flex-direction: column;
+            height: 200px;
+        }
+
+        .program-card h4 {
+            color: var(--dark-color);
+            margin-bottom: var(--spacing-sm);
+            font-size: 1.5rem;
+        }
+
+        .program-card p {
+            color: var(--text-light);
+            flex-grow: 1;
+            margin-bottom: var(--spacing-md);
+        }
+
+        .program-card .btn {
+            margin-top: auto;
+            align-self: flex-start;
+        }
+
+        /* Service Cards */
+        .service-card {
+            background: var(--white);
+            border-radius: var(--border-radius);
+            padding: var(--spacing-lg);
+            box-shadow: var(--shadow-md);
+            text-align: center;
+            height: 100%;
+            transition: transform var(--transition);
+        }
+
+        .service-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .service-icon {
+            width: 80px;
+            height: 80px;
+            border-radius: 50%;
+            background: var(--primary-color);
+            color: var(--white);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto var(--spacing-md);
+            font-size: 2rem;
+            transition: transform var(--transition);
+        }
+
+        .service-card:hover .service-icon {
+            transform: scale(1.1) rotate(10deg);
+        }
+
+        /* Project Cards */
+        .project-card {
+            position: relative;
+            border-radius: var(--border-radius);
+            overflow: hidden;
+            box-shadow: var(--shadow-md);
+            margin-bottom: var(--spacing-lg);
+        }
+
+        .project-card img {
+            width: 100%;
+            height: 300px;
+            object-fit: cover;
+            transition: transform var(--transition);
+        }
+
+        .project-overlay {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            background: linear-gradient(to top, rgba(0,0,0,0.9), transparent);
+            padding: var(--spacing-md);
+            color: var(--white);
+            transform: translateY(100%);
+            transition: transform var(--transition);
+        }
+
+        .project-card:hover img {
+            transform: scale(1.1);
+        }
+
+        .project-card:hover .project-overlay {
+            transform: translateY(0);
+        }
+
+        /* Stats Section */
+        .stats-section {
+            background: var(--primary-color);
+            color: var(--white);
+        }
+
+        .stats-counter {
+            font-size: 3.5rem;
+            font-weight: 700;
+            margin-bottom: var(--spacing-xs);
+        }
+
+        .stats-label {
+            font-size: 1.2rem;
+            opacity: 0.9;
+        }
+
+        /* Partner Logos */
+        .partner-logo {
+            height: 100px;
+            object-fit: contain;
+            filter: grayscale(100%);
+            transition: filter var(--transition), transform var(--transition);
+            opacity: 0.7;
+        }
+
+        .partner-logo:hover {
+            filter: grayscale(0%);
+            transform: scale(1.05);
+            opacity: 1;
+        }
+
+        /* Timeline */
+        .timeline {
+            position: relative;
+            padding: var(--spacing-lg) 0;
+        }
+
+        .timeline::before {
+            content: '';
+            position: absolute;
+            left: 50%;
+            top: 0;
+            bottom: 0;
+            width: 2px;
+            background: var(--primary-color);
+            transform: translateX(-50%);
+        }
+
+        .timeline-item {
+            position: relative;
+            margin-bottom: var(--spacing-xl);
+            width: 50%;
+            padding: 0 var(--spacing-lg);
+        }
+
+        .timeline-item:nth-child(even) {
+            margin-left: 50%;
+        }
+
+        .timeline-item::before {
+            content: '';
+            position: absolute;
+            top: 15px;
+            width: 20px;
+            height: 20px;
+            background: var(--primary-color);
+            border-radius: 50%;
+            border: 4px solid var(--white);
+            box-shadow: var(--shadow-sm);
+        }
+
+        .timeline-item:nth-child(odd)::before {
+            right: -10px;
+        }
+
+        .timeline-item:nth-child(even)::before {
+            left: -10px;
+        }
+
+        .timeline-content {
+            background: var(--white);
+            padding: var(--spacing-md);
+            border-radius: var(--border-radius);
+            box-shadow: var(--shadow-md);
+        }
+
+        /* CTA Section */
+        .cta-section {
+            background: linear-gradient(135deg, var(--primary-color), var(--accent-color));
+            color: var(--white);
+            text-align: center;
+        }
+
+        /* Footer */
+        .footer {
+            background: var(--primary-color);
+            color: var(--dark-color);
+            padding: 50px 0 20px;
+        }
+
+        .footer-title {
+            color: var(--white);
+            font-size: 1.5rem;
+            margin-bottom: var(--spacing-md);
+        }
+
+        .footer-links {
+            list-style: none;
+            padding: 0;
+        }
+
+        .footer-links a {
+            color: var(--dark-color);
+            text-decoration: none;
+            transition: color var(--transition);
+        }
+
+        .footer-links a:hover {
+            color: var(--white);
+        }
+
+        /* Utilities */
+        .btn-primary {
+            background: var(--primary-color);
+            border: none;
+            padding: 10px 24px;
+            border-radius: var(--border-radius);
+            font-weight: 600;
+            transition: all var(--transition);
+        }
+
+        .btn-primary:hover {
+            background: var(--accent-color);
+            transform: translateY(-2px);
+            box-shadow: var(--shadow-md);
+        }
+
+        .btn-outline-primary {
+            border: 2px solid var(--primary-color);
+            color: var(--primary-color);
+            padding: 10px 24px;
+            border-radius: var(--border-radius);
+            font-weight: 600;
+            transition: all var(--transition);
+        }
+
+        .btn-outline-primary:hover {
+            background: var(--primary-color);
+            color: var(--white);
+            transform: translateY(-2px);
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .section-title {
+                font-size: 2rem;
+            }
+
+            .timeline::before {
+                left: 20px;
+            }
+
+            .timeline-item {
+                width: 100%;
+                padding-left: 50px;
+                margin-left: 0 !important;
+            }
+
+            .timeline-item::before {
+                left: 10px !important;
+            }
+
+            .stats-counter {
+                font-size: 2.5rem;
+            }
+
+            .hero-content h1 {
+                font-size: 2.5rem;
+            }
+        }
+
+        /* Animation Classes */
+        .fade-up {
+            opacity: 0;
+            transform: translateY(30px);
+            transition: opacity 0.6s ease, transform 0.6s ease;
+        }
+
+        .fade-up.aos-animate {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="top-header">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="d-flex gap-3">
+                            <a href="mailto:info@sherisesfoundation.co.ke">
+                                <i class="fas fa-envelope me-1"></i>
+                                info@sherisesfoundation.co.ke
+                            </a>
+                            <a href="tel:+254701776098">
+                                <i class="fas fa-phone me-1"></i>
+                                +(254)701776098
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <nav class="navbar navbar-expand-lg">
+            <div class="container">
+                <a class="navbar-brand" href="index.html">
+                    <img src="assets/image/logo.png" alt="SheRises Foundation">
+                </a>
+                
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                    <i class="fas fa-bars"></i>
+                </button>
+                
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">
+                                Who We Are
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#about">About Us</a></li>
+                                <li><a class="dropdown-item" href="#mission">Our Mission</a></li>
+                                <li><a class="dropdown-item" href="#team">Our Team</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">
+                                What We Do
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#programs">Our Programs</a></li>
+                                <li><a class="dropdown-item" href="#services">Services</a></li>
+                                <li><a class="dropdown-item" href="#projects">Current Projects</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#impact">Our Impact</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#media">Media</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link get-involved" href="#contact">Get Involved</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <div class="hero-content" data-aos="fade-up">
+                <h1>What We Do</h1>
+                <p class="lead">Empowering communities through sustainable development and innovative solutions.</p>
+                <div class="d-flex gap-3 flex-wrap">
+                    <a href="#programs" class="btn btn-primary btn-lg">Explore Our Programs</a>
+                    <a href="#contact" class="btn btn-outline-light btn-lg">Get in Touch</a>
+                </div>
+            </div>
+        </div>
+        <div class="scroll-indicator" onclick="scrollToSection('#programs')">
+            <i class="fas fa-chevron-down"></i>
+        </div>
+    </section>
+
+    <!-- Programs Section -->
+    <section id="programs" class="section">
+        <div class="container">
+            <h2 class="section-title" data-aos="fade-up">Our Programs</h2>
+            <p class="text-center lead mb-5" data-aos="fade-up" data-aos-delay="100">
+                Discover how we're making a difference through comprehensive programs designed to create lasting positive change.
+            </p>
+            
+            <div class="row g-4">
+                <div class="col-lg-3 col-md-6" data-aos="fade-up">
+                    <div class="program-card">
+                        <img src="assets/image/gallery/gender.png" alt="Education Program">
+                        <div class="card-body">
+                            <h4>Education</h4>
+                            <p>Providing quality education, mentorship, and learning resources to empower individuals and create opportunities for lifelong learning.</p>
+                            <a href="#education" class="btn btn-outline-primary">Learn More</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-lg-3 col-md-6" data-aos="fade-up" data-aos-delay="100">
+                    <div class="program-card">
+                        <img src="assets/image/gallery/health-1.jpeg" alt="Healthcare Program">
+                        <div class="card-body">
+                            <h4>Healthcare</h4>
+                            <p>Improving access to essential medical services and promoting community well-being through prevention and education.</p>
+                            <a href="#healthcare" class="btn btn-outline-primary">Learn More</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-lg-3 col-md-6" data-aos="fade-up" data-aos-delay="200">
+                    <div class="program-card">
+                        <img src="assets/image/gallery/inclusive.png" alt="Community Development">
+                        <div class="card-body">
+                            <h4>Community Development</h4>
+                            <p>Strengthening communities through sustainable development projects and innovative local solutions.</p>
+                            <a href="#community" class="btn btn-outline-primary">Learn More</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-lg-3 col-md-6" data-aos="fade-up" data-aos-delay="300">
+                    <div class="program-card">
+                        <img src="assets/image/gallery/mental.jpeg" alt="Youth Empowerment">
+                        <div class="card-body">
+                            <h4>Youth Empowerment</h4>
+                            <p>Developing the next generation of leaders through skills training, mentorship, and leadership programs.</p>
+                            <a href="#youth" class="btn btn-outline-primary">Learn More</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="section bg-light">
+        <div class="container">
+            <h2 class="section-title" data-aos="fade-up">Our Services</h2>
+            
+            <div class="row g-4">
+                <div class="col-lg-4 col-md-6" data-aos="fade-up">
+                    <div class="service-card">
+                        <div class="service-icon">
+                            <i class="fas fa-book-reader"></i>
+                        </div>
+                        <h4>Educational Support</h4>
+                        <p>Providing tutoring, mentoring, and educational resources to students in need.</p>
+                    </div>
+                </div>
+                
+                <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
+                    <div class="service-card">
+                        <div class="service-icon">
+                            <i class="fas fa-heartbeat"></i>
+                        </div>
+                        <h4>Health Services</h4>
+                        <p>Offering health screenings, wellness programs, and medical support services.</p>
+                    </div>
+                </div>
+                
+                <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
+                    <div class="service-card">
+                        <div class="service-icon">
+                            <i class="fas fa-hands-helping"></i>
+                        </div>
+                        <h4>Community Support</h4>
+                        <p>Providing resources and assistance for community development initiatives.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Current Projects Section -->
+    <section id="projects" class="section">
+        <div class="container">
+            <h2 class="section-title" data-aos="fade-up">Current Projects</h2>
+            
+            <div class="row g-4">
+                <div class="col-lg-4 col-md-6" data-aos="fade-up">
+                    <div class="project-card">
+                        <img src="assets/image/gallery/beach.jpeg" alt="Rural Education Initiative">
+                        <div class="project-overlay">
+                            <h4>Rural Education Initiative</h4>
+                            <p>Bringing quality education to remote communities.</p>
+                            <a href="#" class="btn btn-light btn-sm">Learn More</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
+                    <div class="project-card">
+                        <img src="assets/image/gallery/climate.png" alt="Community Health Program">
+                        <div class="project-overlay">
+                            <h4>Community Health Program</h4>
+                            <p>Providing essential healthcare services to underserved areas.</p>
+                            <a href="#" class="btn btn-light btn-sm">Learn More</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
+                    <div class="project-card">
+                        <img src="assets/image/gallery/gender.png" alt="Youth Skills Development">
+                        <div class="project-overlay">
+                            <h4>Youth Skills Development</h4>
+                            <p>Training young people in valuable career skills.</p>
+                            <a href="#" class="btn btn-light btn-sm">Learn More</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Impact Stats Section -->
+    <section class="stats-section section">
+        <div class="container">
+            <div class="row text-center">
+                <div class="col-md-3 mb-4" data-aos="fade-up">
+                    <div class="stats-counter" data-target="5000">0</div>
+                    <div class="stats-label">Lives Impacted</div>
+                </div>
+                <div class="col-md-3 mb-4" data-aos="fade-up" data-aos-delay="100">
+                    <div class="stats-counter" data-target="20">0</div>
+                    <div class="stats-label">Active Projects</div>
+                </div>
+                <div class="col-md-3 mb-4" data-aos="fade-up" data-aos-delay="200">
+                    <div class="stats-counter" data-target="50">0</div>
+                    <div class="stats-label">Community Partners</div>
+                </div>
+                <div class="col-md-3 mb-4" data-aos="fade-up" data-aos-delay="300">
+                    <div class="stats-counter" data-target="100">0</div>
+                    <div class="stats-label">Volunteers</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Partnerships Section -->
+    <section class="section bg-light">
+        <div class="container">
+            <h2 class="section-title" data-aos="fade-up">Our Partnerships</h2>
+            
+            <div class="row align-items-center justify-content-center">
+                <div class="col-6 col-md-3 text-center mb-4" data-aos="fade-up">
+                    <img src="assets/image/gallery/transparence.png" alt="Partner 1" class="partner-logo">
+                </div>
+                <div class="col-6 col-md-3 text-center mb-4" data-aos="fade-up" data-aos-delay="100">
+                    <img src="assets/image/gallery/sus.png" alt="Partner 2" class="partner-logo">
+                </div>
+                <div class="col-6 col-md-3 text-center mb-4" data-aos="fade-up" data-aos-delay="200">
+                    <img src="assets/image/gallery/reduced.png" alt="Partner 3" class="partner-logo">
+                </div>
+                <div class="col-6 col-md-3 text-center mb-4" data-aos="fade-up" data-aos-delay="300">
+                    <img src="assets/image/gallery/zero.png" alt="Partner 4" class="partner-logo">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Timeline Section -->
+    <section class="section">
+        <div class="container">
+            <h2 class="section-title" data-aos="fade-up">Our Journey</h2>
+            
+            <div class="timeline">
+                <div class="timeline-item" data-aos="fade-up">
+                    <div class="timeline-content">
+                        <h4>2025</h4>
+                        <p>Founded SheRises Foundation with a vision for community empowerment</p>
+                    </div>
+                </div>
+                
+                <div class="timeline-item" data-aos="fade-up" data-aos-delay="100">
+                    <div class="timeline-content">
+                        <h4>2025</h4>
+                        <p>Launched our first educational support program</p>
+                    </div>
+                </div>
+                
+                <div class="timeline-item" data-aos="fade-up" data-aos-delay="200">
+                    <div class="timeline-content">
+                        <h4>2025</h4>
+                        <p>Established partnership with local healthcare providers</p>
+                    </div>
+                </div>
+                
+                <div class="timeline-item" data-aos="fade-up" data-aos-delay="300">
+                    <div class="timeline-content">
+                        <h4>2025</h4>
+                        <p>Expanded our youth empowerment initiatives</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta-section section">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-8 text-center" data-aos="fade-up">
+                    <h2 class="mb-4">Ready to Make a Difference?</h2>
+                    <p class="mb-4 lead">Join us in our mission to create positive change in our communities.</p>
+                    <div class="d-flex justify-content-center gap-3 flex-wrap">
+                        <a href="#volunteer" class="btn btn-primary btn-lg">Get Involved</a>
+                        <a href="#contact" class="btn btn-outline-light btn-lg">Contact Us</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="d-flex align-items-center mb-3">
+                        <img src="assets/image/logo.png" alt="SheRises Foundation" style="width:50px;height:50px;margin-right:12px;">
+                        <div>
+                            <h3 class="footer-title mb-1">SheRises Foundation</h3>
+                            <p class="mb-0" style="font-style: italic;">With Dignity & Compassion</p>
+                        </div>
+                    </div>
+                    <p>Empowering women and girls through education, health, and economic opportunities in Kenya and beyond.</p>
+                </div>
+                
+                <div class="col-lg-2 col-md-3 col-sm-6 mb-4">
+                    <h4 class="footer-title">Quick Links</h4>
+                    <ul class="footer-links">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="#about">About Us</a></li>
+                        <li><a href="#programs">Our Programs</a></li>
+                        <li><a href="#news">News & Events</a></li>
+                        <li><a href="#careers">Careers</a></li>
+                    </ul>
+                </div>
+                
+                <div class="col-lg-2 col-md-3 col-sm-6 mb-4">
+                    <h4 class="footer-title">Our Work</h4>
+                    <ul class="footer-links">
+                        <li><a href="#health">Health & Well-being</a></li>
+                        <li><a href="#mental-health">Mental Health</a></li>
+                        <li><a href="#economic">Economic Empowerment</a></li>
+                        <li><a href="#advocacy">Advocacy</a></li>
+                        <li><a href="#climate">Climate Change</a></li>
+                    </ul>
+                </div>
+                
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <h4 class="footer-title">Contact Us</h4>
+                    <div class="mb-3">
+                        <div class="d-flex align-items-start mb-2">
+                            <i class="fas fa-map-marker-alt me-2 mt-1"></i>
+                            <span>Mtwapa, Kenya</span>
+                        </div>
+                        <div class="d-flex align-items-center mb-2">
+                            <i class="fas fa-envelope me-2"></i>
+                            <a href="mailto:info@sherisesfoundation.co.ke">info@sherisesfoundation.co.ke</a>
+                        </div>
+                        <div class="d-flex align-items-center mb-2">
+                            <i class="fas fa-phone me-2"></i>
+                            <a href="tel:+254724539262">(254) 724 539 262</a>
+                        </div>
+                        <div class="d-flex align-items-center">
+                            <i class="fas fa-clock me-2"></i>
+                            <span>Mon-Fri: 8AM - 5PM</span>
+                        </div>
+                    </div>
+                    
+                    <div>
+                        <h5 class="mb-2">Stay Updated</h5>
+                        <form class="d-flex gap-2">
+                            <input type="email" class="form-control" placeholder="Your email" style="background: rgba(255,255,255,0.1); border: 1px solid rgba(255,255,255,0.2); color: white;">
+                            <button type="submit" class="btn btn-secondary">Subscribe</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            
+            <hr style="border-color: rgba(255,255,255,0.2);">
+            
+            <div class="row align-items-center">
+                <div class="col-md-6">
+                    <p class="mb-0">&copy; 2025 SheRises Foundation. All rights reserved.</p>
+                </div>
+                <div class="col-md-6 text-md-end">
+                    <div class="d-flex justify-content-md-end gap-3 mt-2 mt-md-0">
+                        <a href="#privacy">Privacy Policy</a>
+                        <a href="#terms">Terms of Service</a>
+                        <a href="#cookies">Cookies</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    
+    <script>
+        // Initialize AOS
+        AOS.init({
+            duration: 800,
+            once: true,
+            offset: 100
+        });
+
+        // Counter Animation
+        function animateCounter(element) {
+            const target = parseInt(element.dataset.target);
+            const duration = 2000;
+            const steps = 60;
+            const stepValue = target / steps;
+            let current = 0;
+
+            const timer = setInterval(() => {
+                current += stepValue;
+                if (current >= target) {
+                    current = target;
+                    clearInterval(timer);
+                }
+                element.textContent = Math.floor(current).toLocaleString();
+            }, duration / steps);
+        }
+
+        // Intersection Observer for counter animation
+        const counterObserver = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    const counters = entry.target.querySelectorAll('.stats-counter');
+                    counters.forEach(counter => animateCounter(counter));
+                    counterObserver.unobserve(entry.target);
+                }
+            });
+        });
+
+        // Observe stats section
+        const statsSection = document.querySelector('.stats-section');
+        if (statsSection) counterObserver.observe(statsSection);
+
+        // Smooth scroll function
+        function scrollToSection(selector) {
+            const element = document.querySelector(selector);
+            if (element) {
+                element.scrollIntoView({
+                    behavior: 'smooth',
+                    block: 'start'
+                });
+            }
+        }
+
+        // Smooth scroll for all anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const targetId = this.getAttribute('href');
+                if (targetId !== '#') {
+                    scrollToSection(targetId);
+                }
+            });
+        });
+
+        // Parallax effect for hero
+        let ticking = false;
+        
+        function updateParallax() {
+            const scrolled = window.pageYOffset;
+            const hero = document.querySelector('.hero');
+            
+            if (hero) {
+                hero.style.transform = `translateY(${scrolled * 0.5}px)`;
+            }
+            
+            ticking = false;
+        }
+
+        function requestTick() {
+            if (!ticking) {
+                requestAnimationFrame(updateParallax);
+                ticking = true;
+            }
+        }
+
+        window.addEventListener('scroll', requestTick);
+
+        // Newsletter form submission
+        document.querySelector('.footer form').addEventListener('submit', function(e) {
+            e.preventDefault();
+            const email = this.querySelector('input[type="email"]').value;
+            if (email) {
+                alert('Thank you for subscribing! We\'ll keep you updated.');
+                this.reset();
+            }
+        });
+    </script>
+</body>
+</html>

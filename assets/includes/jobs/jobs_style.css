@@ -1,0 +1,53 @@
+
+/* ============================================================================================= */
+/* @ JOBS
+/* --------------------------------------------------------------------------------------------- */
+
+.apply-btn{background:#ff9b44;background:-moz-linear-gradient(left,#ff9b44 0,#fc6075 100%);background:-webkit-linear-gradient(left,#ff9b44 0,#fc6075 100%);background:-ms-linear-gradient(left,#ff9b44 0,#fc6075 100%);background:linear-gradient(to right,#ff9b44 0,#fc6075 100%);border-color:transparent;box-shadow:0 6px 15px rgba(36,37,38,.08);color:#fff;position:absolute;right:20px;top:20px}
+.job-list{background-color:#fff;border:1px solid #ededed;border-radius:4px;box-shadow:0 1px 1px 0 rgba(0,0,0,.2);display:block;margin-bottom:35px;position:relative;transition:all .3s ease 0s}
+.job-list-det{align-items:flex-start;display:flex;align-items:center;padding:20px 20px 10px 20px}
+.jobs-home .job-list-det{min-height:90px;padding-bottom:20px}
+.job-list .job-list-info{clear:both;padding:10px 20px 5px}
+.job-list .job-list-info p{margin-bottom:10px}
+.job-list .job-list-desc{flex:1 1 0}
+.job-list .job-department{color:#777;font-size:14px;margin-bottom:0}
+.job-list .job-list-title,.job-list-title{ font-size:110%;font-weight:600; font-family: var(--font-head); }
+.job-list .job-list-footer{background-color:#f9f9f9;border-radius:0 0 4px 4px;position:relative;padding:20px}
+.job-list .job-list-footer ul{list-style:none;margin:0;padding:0}
+.jobs-home .job-list .job-list-footer *{color:#777}
+.blog-single .job-list .job-list-footer *{color:#333}
+.job-list .job-list-footer ul li{color:#777;display:inline-block;margin-right:14px}
+.job-list .job-list-footer ul li i{color:#777;margin-right:3px;position:relative}
+.job-list .job-list-footer ul li:last-child{margin-right:0}
+.page-wrapper.job-wrapper{margin-left:0}
+.job-types{background-color:transparent;border:1px solid #993d04;color:#993d04;border-radius:4px;display:inline-block;padding:7px 15px;text-align:center;font-weight:700; font-size: 14px;}
+.job-types-blue{border:1px solid #286090;color:#286090}
+.job-types-success{border:1px solid var(--color-one-base);background-color:var(--color-one-base)!important;color:#fff}
+.job-types-warning{border:1px solid #e86d20;background-color:#cecece!important;color:#000000}
+.card-header:first-child{border-radius:calc(.25rem - 1px) calc(.25rem - 1px) 0 0}
+div#boxes h4{font-size:18px;color:#999;border-bottom:1px dotted #666;display:block;padding-bottom:7px;font-weight:400;margin-bottom:10px;margin-top:20px}
+.cv_detail h3{font-size:20px;color:#777;margin-top:30px;border-bottom:1px dotted #666;padding-bottom:7px;font-weight:400;margin-bottom:10px}
+.cv_detail h3 .prof_edit{font-size:14px}
+div.sechead{font-size:105%;color:#900;border-bottom:1px dotted #900;font-weight:700}
+div#boxes .info{background:#f8f8f8;color:#666;padding:10px;margin-bottom:.5em;font-size:91.7%;border:1px solid #cdcdcd}
+fieldset,fieldset.fset-basic{padding:0;margin:0}
+fieldset.fset-basic{background:0 0;border:0 dotted #9b9b9b;display:block}
+fieldset.fset-basic legend{font-weight:700;text-transform:capitalize;color:#900;display:none}
+fieldset.fset-basic table{width:100%}
+fieldset.fset-basic table td,fieldset.fset-basic table th{vertical-align:top}
+fieldset.fset-basic table td label{padding-left:2px; padding-top: 5px;}
+fieldset.fset-basic table td .form-control{margin-bottom:5px;color:#495057;transition:border-color .15s ease-in-out,box-shadow .15s ease-in-out}
+fieldset.fset-basic hr{border:1px solid #ccc}
+.nav_user_side{list-style:none;list-style-type:none;border:0 solid #000;margin:0;padding:0}
+.nav_user_side li{list-style-type:none;border-bottom:1px solid #efefef;margin:0;padding:5px 5px 5px 5px;color:#888}
+.nav_user_side li:hover{background:rgba(0,0,0,.03)}
+.nav_user_side li a.active{color:#de6226;}
+div.error{background:#fff3f3;border:2px solid #f66;margin:10px 0;text-align:center;height:auto;color:#900;font-weight:400;letter-spacing:.05em;height:auto;padding:15px 0;min-height:25px;overflow:hidden;display:none}
+div.is_success{background:#ddffb3;border:2px solid #8ec051;margin:10px 0;text-align:center;height:auto;color:#14af00;font-weight:400;letter-spacing:.05em;height:auto;padding:15px 0;min-height:25px;overflow:hidden;display:none}
+.bg-soft-white{background-color:rgba(255,255,255,.8)}
+.bg-soft-primary{background-color:rgba(51,94,234,.2)!important}
+.bg-soft-secondary{background-color:rgba(243,108,155,.2)!important}
+.bg-soft-success{background-color:rgba(80,210,148,.2)!important}
+.bg-soft-danger{background-color:#fff0f0!important}
+.bg-soft-warning{background-color:#fffcde!important}
+.bg-soft-info{background-color:rgba(83,202,216,.2)!important}
