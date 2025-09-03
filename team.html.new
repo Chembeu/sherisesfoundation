@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Team - SheRises Foundation</title>
+    <link rel="shortcut icon" type="image/x-icon" href="assets/image/logo.png">
+    
+    <!-- External Stylesheets -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/themify-icons/0.1.2/css/themify-icons.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&family=Quicksand:wght@400;600;700&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" rel="stylesheet">
+    
+    <!-- Local Stylesheets -->
+    <link rel="stylesheet" href="assets/css/animate.css">
+    <link rel="stylesheet" href="assets/css/vars.css">
+    <link rel="stylesheet" href="assets/css/base_system002e.css">  
+    <link rel="stylesheet" href="assets/css/main002e.css">  
+    <link rel="stylesheet" href="assets/css/main_navs002e.css">
+    <link rel="stylesheet" href="assets/css/responsive002e.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="top-header">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="d-flex gap-3">
+                            <a href="mailto:info@sherisesfoundation.co.ke">
+                                <i class="fas fa-envelope me-1"></i>
+                                info@sherisesfoundation.co.ke
+                            </a>
+                            <a href="tel:+254701776098">
+                                <i class="fas fa-phone me-1"></i>
+                                +(254)701776098
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <nav class="navbar navbar-expand-lg">
+            <div class="container">
+                <a class="navbar-brand" href="index.html">
+                    <img src="assets/image/logo.png" alt="SheRises Foundation">
+                </a>
+                
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                    <i class="fas fa-bars"></i>
+                </button>
+                
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="about.html" role="button" data-bs-toggle="dropdown">
+                                Who We Are
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="about.html#about">About Us</a></li>
+                                <li><a class="dropdown-item" href="about.html#mission">Our Mission</a></li>
+                                <li><a class="dropdown-item" href="team.html">Our Team</a></li>
+                                <li><a class="dropdown-item" href="about.html#board">Board of Directors</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="what-we-do.html" role="button" data-bs-toggle="dropdown">
+                                What We Do
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="what-we-do.html#programs">Our Programs</a></li>
+                                <li><a class="dropdown-item" href="what-we-do.html#services">Services</a></li>
+                                <li><a class="dropdown-item" href="what-we-do.html#projects">Current Projects</a></li>
+                                <li><a class="dropdown-item" href="what-we-do.html#partnerships">Partnerships</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="impact.html">Our Impact</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="media.html" role="button" data-bs-toggle="dropdown">
+                                Media + Resources
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="media.html#news">News & Updates</a></li>
+                                <li><a class="dropdown-item" href="media.html#publications">Publications</a></li>
+                                <li><a class="dropdown-item" href="media.html#gallery">Photo Gallery</a></li>
+                                <li><a class="dropdown-item" href="media.html#downloads">Downloads</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link get-involved" href="get-involved.html">Get Involved</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+        <!-- Banner Section -->
+        <section class="page-banner">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="banner-content">
+                            <h1>Our Team</h1>
+                            <nav aria-label="breadcrumb">
+                                <ol class="breadcrumb">
+                                    <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+                                    <li class="breadcrumb-item"><a href="about.html">Who We Are</a></li>
+                                    <li class="breadcrumb-item active" aria-current="page">Our Team</li>
+                                </ol>
+                            </nav>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Team Section -->
+        <section class="team-section">
+            <div class="container">
+                <div class="section-heading text-center mb-5" data-aos="fade-up">
+                    <div class="h5">Meet Our Team</div>
+                    <span class="heading-border"></span>
+                    <h2>Dedicated to Making a Difference</h2>
+                    <p>Our team brings together diverse expertise and passionate individuals committed to empowering women and girls.</p>
+                </div>
+
+                <div class="row">
+                    <!-- Leadership Team -->
+                    <div class="col-12 mb-5">
+                        <h3 class="text-center mb-4">Leadership Team</h3>
+                        <div class="row">
+                            <!-- Team Member Card -->
+                            <div class="col-lg-4 col-md-6 mb-4" data-aos="fade-up" data-aos-delay="100">
+                                <div class="team-card">
+                                    <div class="team-image">
+                                        <img src="assets/image/team/member1.jpg" alt="Team Member">
+                                        <div class="social-links">
+                                            <a href="#"><i class="fab fa-linkedin"></i></a>
+                                            <a href="#"><i class="fab fa-twitter"></i></a>
+                                            <a href="#"><i class="fas fa-envelope"></i></a>
+                                        </div>
+                                    </div>
+                                    <div class="team-info">
+                                        <h4>Sarah Johnson</h4>
+                                        <p class="position">Executive Director</p>
+                                        <p class="bio">15+ years of experience in non-profit leadership and women's empowerment initiatives.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Add more leadership team members -->
+                        </div>
+                    </div>
+
+                    <!-- Program Staff -->
+                    <div class="col-12 mb-5">
+                        <h3 class="text-center mb-4">Program Staff</h3>
+                        <div class="row">
+                            <!-- Team Member Card -->
+                            <div class="col-lg-4 col-md-6 mb-4" data-aos="fade-up" data-aos-delay="100">
+                                <div class="team-card">
+                                    <div class="team-image">
+                                        <img src="assets/image/team/member4.jpg" alt="Team Member">
+                                        <div class="social-links">
+                                            <a href="#"><i class="fab fa-linkedin"></i></a>
+                                            <a href="#"><i class="fas fa-envelope"></i></a>
+                                        </div>
+                                    </div>
+                                    <div class="team-info">
+                                        <h4>Emily Mwangi</h4>
+                                        <p class="position">Program Manager</p>
+                                        <p class="bio">Specializes in community health programs and women's economic empowerment.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Add more program staff members -->
+                        </div>
+                    </div>
+
+                    <!-- Support Staff -->
+                    <div class="col-12">
+                        <h3 class="text-center mb-4">Support Staff</h3>
+                        <div class="row">
+                            <!-- Team Member Card -->
+                            <div class="col-lg-4 col-md-6 mb-4" data-aos="fade-up" data-aos-delay="100">
+                                <div class="team-card">
+                                    <div class="team-image">
+                                        <img src="assets/image/team/member7.jpg" alt="Team Member">
+                                        <div class="social-links">
+                                            <a href="#"><i class="fab fa-linkedin"></i></a>
+                                            <a href="#"><i class="fas fa-envelope"></i></a>
+                                        </div>
+                                    </div>
+                                    <div class="team-info">
+                                        <h4>John Kamau</h4>
+                                        <p class="position">Communications Officer</p>
+                                        <p class="bio">Expert in digital communications and community engagement.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Add more support staff members -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Join Our Team Section -->
+        <section class="join-team-section bg-light">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-lg-6" data-aos="fade-right">
+                        <div class="section-heading">
+                            <div class="h5">Careers</div>
+                            <span class="heading-border"></span>
+                            <h2>Join Our Team</h2>
+                            <p>We're always looking for passionate individuals who share our vision of empowering women and girls. Join us in making a difference in our communities.</p>
+                            <a href="opportunities.html" class="btn btn-primary mt-3">View Open Positions</a>
+                        </div>
+                    </div>
+                    <div class="col-lg-6" data-aos="fade-left">
+                        <img src="assets/image/team/join-team.jpg" alt="Join Our Team" class="img-fluid">
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="d-flex align-items-center mb-3">
+                        <img src="assets/image/logo.png" alt="SheRises Foundation" style="width:50px;height:50px;margin-right:12px;">
+                        <div>
+                            <h3 class="footer-title mb-1">SheRises Foundation</h3>
+                            <p class="mb-0" style="font-style: italic;">With Dignity & Compassion</p>
+                        </div>
+                    </div>
+                    <p>Empowering women and girls through education, health, and economic opportunities in Kenya and beyond.</p>
+                </div>
+                
+                <div class="col-lg-2 col-md-3 col-sm-6 mb-4">
+                    <h4 class="footer-title">Quick Links</h4>
+                    <ul class="footer-links">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="what-we-do.html">Our Programs</a></li>
+                        <li><a href="media.html#news">News & Events</a></li>
+                        <li><a href="opportunities.html">Careers</a></li>
+                    </ul>
+                </div>
+                
+                <div class="col-lg-2 col-md-3 col-sm-6 mb-4">
+                    <h4 class="footer-title">Our Work</h4>
+                    <ul class="footer-links">
+                        <li><a href="what-we-do.html#health">Health & Well-being</a></li>
+                        <li><a href="what-we-do.html#mental-health">Mental Health</a></li>
+                        <li><a href="what-we-do.html#economic">Economic Empowerment</a></li>
+                        <li><a href="what-we-do.html#advocacy">Advocacy</a></li>
+                        <li><a href="what-we-do.html#climate">Climate Change</a></li>
+                    </ul>
+                </div>
+                
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <h4 class="footer-title">Contact Us</h4>
+                    <div class="mb-3">
+                        <div class="d-flex align-items-start mb-2">
+                            <i class="fas fa-map-marker-alt me-2 mt-1"></i>
+                            <span>Mtwapa, Kenya</span>
+                        </div>
+                        <div class="d-flex align-items-center mb-2">
+                            <i class="fas fa-envelope me-2"></i>
+                            <a href="mailto:info@sherisesfoundation.co.ke">info@sherisesfoundation.co.ke</a>
+                        </div>
+                        <div class="d-flex align-items-center mb-2">
+                            <i class="fas fa-phone me-2"></i>
+                            <a href="tel:+254724539262">(254) 724 539 262</a>
+                        </div>
+                        <div class="d-flex align-items-center">
+                            <i class="fas fa-clock me-2"></i>
+                            <span>Mon-Fri: 8AM - 5PM</span>
+                        </div>
+                    </div>
+                    
+                    <div>
+                        <h5 class="mb-2">Stay Updated</h5>
+                        <form class="d-flex gap-2">
+                            <input type="email" class="form-control" placeholder="Your email">
+                            <button type="submit" class="btn btn-primary">Subscribe</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            
+            <hr>
+            
+            <div class="row align-items-center">
+                <div class="col-md-6">
+                    <p class="mb-0">&copy; 2025 SheRises Foundation. All rights reserved.</p>
+                </div>
+                <div class="col-md-6 text-md-end">
+                    <div class="d-flex justify-content-md-end gap-3 mt-2 mt-md-0">
+                        <a href="privacy.html">Privacy Policy</a>
+                        <a href="terms.html">Terms of Service</a>
+                        <a href="cookies.html">Cookies</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <script>
+        // Initialize AOS
+        AOS.init({
+            duration: 800,
+            once: true,
+            offset: 100
+        });
+
+        // Newsletter form submission
+        document.querySelector('.footer form').addEventListener('submit', function(e) {
+            e.preventDefault();
+            const email = this.querySelector('input[type="email"]').value;
+            if (email) {
+                alert('Thank you for subscribing! We\'ll keep you updated.');
+                this.reset();
+            }
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,123 @@
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-top">
+                <div class="footer-logo">
+                    <div class="logo-section">
+                        <img src="assets/image/logo.png" alt="SheRises Foundation Logo" style="width:60px;height:60px;border-radius:50%;object-fit:cover;box-shadow:0 2px 8px rgba(0,0,0,0.10);margin-right:12px;">
+                        <div class="logo-text">
+                            <div class="logo-title">SheRises Foundation</div>
+                            <div class="logo-subtitle">With Dignity & Compassion</div>
+                        </div>
+                    </div>
+                    <p class="footer-mission">Empowering women and girls through education, health, and economic opportunities in Kenya and beyond.</p>
+                </div>
+
+                <div class="footer-links">
+                    <div class="links-columns-wrapper">
+                        <div class="links-column">
+                            <h3 class="links-title">Quick Links</h3>
+                            <ul class="links-list">
+                                <li><a href="index.html">Home</a></li>
+                                <li><a href="about.html">About Us</a></li>
+                                <li><a href="what-we-do.html">Our Programs</a></li>
+                                <li><a href="media.html#news">News & Events</a></li>
+                                <li><a href="careers.html">Careers</a></li>
+                            </ul>
+                        </div>
+
+                        <div class="links-column">
+                            <h3 class="links-title">Our Work</h3>
+                            <ul class="links-list">
+                                <li><a href="what-we-do.html#health">Health & Well-being</a></li>
+                                <li><a href="what-we-do.html#mental-health">Mental Health</a></li>
+                                <li><a href="what-we-do.html#economic">Economic Empowerment</a></li>
+                                <li><a href="what-we-do.html#advocacy">Advocacy</a></li>
+                                <li><a href="what-we-do.html#climate">Climate Change</a></li>
+                            </ul>
+                        </div>
+
+                        <div class="links-column">
+                            <h3 class="links-title">Contact Info</h3>
+                            <ul class="links-list contact-info">
+                                <li>
+                                    <span class="icon">
+                                        <i class="ti-location-pin"></i>
+                                    </span>
+                                    <span>Mtwapa, Kenya</span>
+                                </li>
+                                <li>
+                                    <span class="icon">
+                                        <i class="ti-email"></i>
+                                    </span>
+                                    <a href="mailto:info@sherisesfoundation.co.ke">info@sherisesfoundation.co.ke</a>
+                                </li>
+                                <li>
+                                    <span class="icon">
+                                        <i class="ti-mobile"></i>
+                                    </span>
+                                    <a href="tel:+254701776098">+(254) 701 776 098</a>
+                                </li>
+                                <li>
+                                    <span class="icon">
+                                        <i class="ti-time"></i>
+                                    </span>
+                                    <span>Mon-Fri: 8AM - 5PM</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <div class="footer-legal">
+                    <p>&copy; 2025 SheRises Foundation. All rights reserved.</p>
+                    <div class="legal-links">
+                        <a href="privacy.html">Privacy Policy</a>
+                        <a href="terms.html">Terms of Service</a>
+                        <a href="cookies.html">Cookies</a>
+                    </div>
+                </div>
+
+                <div class="footer-newsletter">
+                    <h4>Stay Updated</h4>
+                    <form class="newsletter-form">
+                        <input type="email" placeholder="Your email address" required>
+                        <button type="submit">Subscribe</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="assets/scripts/libs/aos.js"></script>
+    <script src="assets/scripts/bootstrap/bootstrap.5.3.3.bundle.min.js"></script>
+    <script>
+        // Initialize AOS
+        AOS.init();
+
+        // Mobile Menu Toggle
+        function toggleMobileMenu() {
+            const mobileMenu = document.getElementById('mobileMenu');
+            mobileMenu.classList.toggle('active');
+        }
+
+        // Close mobile menu when clicking on a link
+        document.querySelectorAll('#menu_mobile a').forEach(link => {
+            link.addEventListener('click', () => {
+                toggleMobileMenu();
+            });
+        });
+
+        // Handle dropdown menus on hover for desktop
+        document.querySelectorAll('.main-menu .has-dropdown').forEach(dropdown => {
+            dropdown.addEventListener('mouseenter', function() {
+                this.querySelector('.dropdown').style.display = 'block';
+            });
+            
+            dropdown.addEventListener('mouseleave', function() {
+                this.querySelector('.dropdown').style.display = 'none';
+            });
+        });
+    </script>
