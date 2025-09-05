@@ -295,7 +295,7 @@ a,a:hover, .overlay, img, .form-control,  .form-control:hover, button {
 .bottom-header{background-color:#fff;position:relative}
 .bottom-content-wrap{display:flex;align-items:center}
 @media (min-width: 962px) { 
-	body.theme-inner{ background: url(../image/bg-ciheb-fade-left.png) no-repeat 0% 0% #FFF; }
+	body.theme-inner{ background: #FFF; }
 }
 /* @media (max-width: 1024px) { 
 	body.theme-inner { background-size: 72%;background-attachment: fixed;}
