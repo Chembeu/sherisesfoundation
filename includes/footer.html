@@ -3,7 +3,7 @@
             <div class="footer-top">
                 <div class="footer-logo">
                     <div class="logo-section">
-                        <img src="assets/image/logo.png" alt="SheRises Foundation Logo" style="width:60px;height:60px;border-radius:50%;object-fit:cover;box-shadow:0 2px 8px rgba(0,0,0,0.10);margin-right:12px;">
+                        <img src="assets/image/logo.png" alt="SheRises Foundation Logo" style="width:60px;height:60px;border-radius:50%;object-fit:cover;box-shadow:0 2px 8px rgba(0,0,0,0.10);">
                         <div class="logo-text">
                             <div class="logo-title">SheRises Foundation</div>
                             <div class="logo-subtitle">With Dignity & Compassion</div>
@@ -21,18 +21,18 @@
                                 <li><a href="about.html">About Us</a></li>
                                 <li><a href="what-we-do.html">Our Programs</a></li>
                                 <li><a href="media.html#news">News & Events</a></li>
-                                <li><a href="careers.html">Careers</a></li>
+                                <li><a href="mailto:info@sherisesfoundation.co.ke?subject=Careers%20Inquiry">Careers</a></li>
                             </ul>
                         </div>
 
                         <div class="links-column">
                             <h3 class="links-title">Our Work</h3>
                             <ul class="links-list">
-                                <li><a href="what-we-do.html#health">Health & Well-being</a></li>
-                                <li><a href="what-we-do.html#mental-health">Mental Health</a></li>
-                                <li><a href="what-we-do.html#economic">Economic Empowerment</a></li>
-                                <li><a href="what-we-do.html#advocacy">Advocacy</a></li>
-                                <li><a href="what-we-do.html#climate">Climate Change</a></li>
+                                <li><a href="our-program.html#health">Health & Well-being</a></li>
+                                <li><a href="our-program.html#mental-health">Mental Health</a></li>
+                                <li><a href="our-program.html#economic">Economic Empowerment</a></li>
+                                <li><a href="our-program.html#advocacy">Advocacy</a></li>
+                                <li><a href="our-program.html#climate">Climate Change</a></li>
                             </ul>
                         </div>
 
@@ -70,22 +70,10 @@
             </div>
 
             <div class="footer-bottom">
-                <div class="footer-legal">
-                    <p>&copy; 2025 SheRises Foundation. All rights reserved.</p>
-                    <div class="legal-links">
-                        <a href="privacy.html">Privacy Policy</a>
-                        <a href="terms.html">Terms of Service</a>
-                        <a href="cookies.html">Cookies</a>
-                    </div>
-                </div>
-
-                <div class="footer-newsletter">
-                    <h4>Stay Updated</h4>
-                    <form class="newsletter-form">
-                        <input type="email" placeholder="Your email address" required>
-                        <button type="submit">Subscribe</button>
-                    </form>
-                </div>
+                <p>&copy; 2025 SheRises Foundation. All rights reserved. | 
+                <a href="mailto:info@sherisesfoundation.co.ke?subject=Privacy%20Policy">Privacy Policy</a> | 
+                <a href="mailto:info@sherisesfoundation.co.ke?subject=Terms%20of%20Service">Terms of Service</a> | 
+                <a href="mailto:info@sherisesfoundation.co.ke?subject=Cookies%20Policy">Cookies</a></p>
             </div>
         </div>
     </footer>
@@ -96,19 +84,6 @@
     <script>
         // Initialize AOS
         AOS.init();
-
-        // Mobile Menu Toggle
-        function toggleMobileMenu() {
-            const mobileMenu = document.getElementById('mobileMenu');
-            mobileMenu.classList.toggle('active');
-        }
-
-        // Close mobile menu when clicking on a link
-        document.querySelectorAll('#menu_mobile a').forEach(link => {
-            link.addEventListener('click', () => {
-                toggleMobileMenu();
-            });
-        });
 
         // Handle dropdown menus on hover for desktop
         document.querySelectorAll('.main-menu .has-dropdown').forEach(dropdown => {

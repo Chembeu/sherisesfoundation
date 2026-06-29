@@ -1,0 +1,119 @@
+<!-- ════════════════════════════════════════════════════════
+     header.html — SheRises Foundation
+     Reusable site header. Injected into every page by
+     includes.js:  <div id="site-header"></div>
+     Do NOT add a <link> to header.css here — that is already
+     in the <head> of each page's HTML file.
+════════════════════════════════════════════════════════ -->
+<header id="header" class="header-section">
+
+	<!-- Top bar: contact info + social links -->
+<!-- Top bar: contact info + social links -->
+<div class="top-header">
+    <div class="container-lg">
+        <div class="top-content-wrap row align-items-center">
+            <div class="col-sm-8">
+                <ul class="left-info">
+                    <li><a href="mailto:info@sherisesfoundation.co.ke" class="text-lowercase"><i class="ti-email"></i> info@sherisesfoundation.co.ke</a></li>
+                    <li><a href="mailto:fsherises@gmail.com" class="text-lowercase"><i class="ti-email"></i> fsherises@gmail.com</a></li>
+                    <li><a href="tel:+254799041698"><i class="ti-mobile"></i> +254799041698</a></li>
+                </ul>
+            </div>
+            <div class="col-sm-4 text-right">
+                <ul class="social-links">
+                    <li><a href="https://web.facebook.com/profile.php?id=61561058866431" aria-label="Facebook"><i class="ti-facebook"></i></a></li>
+                    <li><a href="https://x.com/_SheRises" aria-label="Twitter"><i class="ti-twitter"></i></a></li>
+                    <li><a href="https://www.instagram.com/sherisesfoundationke/" aria-label="Instagram"><i class="ti-instagram"></i></a></li>
+                    <li><a href="https://tiktok.com/sherisesfoundation" target="_blank" rel="noopener noreferrer" aria-label="TikTok"><i class="fab fa-tiktok"></i></a></li>
+                    
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+	<!-- Bottom bar: logo + desktop nav + mobile toggle -->
+	<div class="bottom-header">
+		<div class="container-lg">
+			<div class="bottom-content-wrap row">
+
+				<!-- Logo -->
+				<div class="col-md-2 col-sm-7 col-9">
+					<div class="site-branding">
+						<a href="index.html">
+							<img src="assets/image/logo.png" alt="SheRises Foundation" style="max-height:60px;width:auto;">
+						</a>
+					</div>
+				</div>
+
+				<!-- Desktop nav + mobile toggle -->
+				<div class="col-md-10 col-sm-5 col-3">
+					<nav class="navbar navbar-expand-xl navbar-wrap d-flex pe-4xx">
+
+						<div class="collapse navbar-collapse main-menu text-right-lg" id="navbarSupportedContent">
+							<ul class="nav navbar-nav navigation nav-mega-menu" id="menu_main">
+								<li class="has-dropdown">
+									<a href="about.html">Who We Are</a>
+									<ul class="dropdown">
+										<li><a href="about.html#about">About Us</a></li>
+										<li><a href="about.html#mission">Our Mission</a></li>
+									</ul>
+								</li>
+								<li class="has-dropdown">
+									<a href="what-we-do.html">Focus Area</a>
+									<ul class="dropdown">
+										<li><a href="our-program.html#health">Health &amp; Well-being</a></li>
+										<li><a href="our-program.html#economic">Economic Empowerment</a></li>
+										<li><a href="our-program.html#advocacy">Policy &amp; Advocacy</a></li>
+										<li><a href="our-program.html#climate">Climate Action</a></li>
+										<li><a href="our-program.html#climate">Peace &amp; Security</a></li>
+									</ul>
+								</li>
+								<li class="has-dropdown">
+									<a href="media.html">Media + Resources</a>
+									<ul class="dropdown">
+										<li><a href="media.html#news">News &amp; Updates</a></li>
+										<li><a href="media.html#publications">Publications</a></li>
+										<li><a href="media.html#gallery">Photo Gallery</a></li>
+										<li><a href="media.html#publications">Downloads</a></li>
+									</ul>
+								</li>
+							</ul>
+							<a href="donate.html" class="donate-btn-nav">Donate</a>
+						</div>
+
+						<!-- Mobile hamburger -->
+						<button class="navbar-toggler mobile-nav-toggler" type="button"
+						        aria-controls="mobileMenu" aria-expanded="false" aria-label="Open Menu">
+							<span class="icon flaticon-menu-1 fas fa-bars"></span>
+						</button>
+
+						<!-- Mobile drawer -->
+						<div class="mobile-menu" id="mobileMenu">
+							<nav class="menu-box">
+								<div class="nav-logo">
+									<button class="close-btn" type="button" aria-label="Close Menu">
+										<span class="fas fa-times"></span>
+									</button>
+								</div>
+								<div class="menu-outer">
+									<ul id="menu_mobile">
+										<li><a href="about.html">Who We Are</a></li>
+										<li><a href="what-we-do.html">What We Do</a></li>
+										<li><a href="our-program.html">Our Programs</a></li>
+										<li><a href="media.html">Media + Resources</a></li>
+										<li><a href="mailto:info@sherisesfoundation.co.ke?subject=Website%20Contact">Contact Us</a></li>
+										<li><a href="mailto:info@sherisesfoundation.co.ke?subject=Opportunities%20Inquiry">Opportunities</a></li>
+										<li><a href="mailto:info@sherisesfoundation.co.ke?subject=Get%20Involved" class="get-involved-btn">GET INVOLVED</a></li>
+									</ul>
+								</div>
+							</nav>
+						</div>
+						<div class="menu-backdrop" hidden></div>
+
+					</nav>
+				</div>
+
+			</div>
+		</div>
+	</div>
+</header>

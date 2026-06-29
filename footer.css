@@ -1,0 +1,97 @@
+/* =============================================================
+   footer.css — SheRises Foundation
+   All styles for the site footer: brand block, link columns,
+   contact info, newsletter form, social icons, and legal bar.
+   Link this file on every page:
+     <link rel="stylesheet" href="assets/css/footer.css">
+   ============================================================= */
+
+.footer {
+	background: rgb(9, 205, 219);
+	color: #fff; padding: 50px 0 20px; margin-top: 50px;
+}
+.footer-container { max-width: 1200px; margin: 0 auto; padding: 0 20px; }
+
+/* ── TOP ROW: brand + link columns ── */
+.footer-top { display: flex; flex-wrap: wrap; gap: 40px; margin-bottom: 40px; }
+.footer-logo { flex: 1; min-width: 300px; }
+.logo-section { display: flex; align-items: center; margin-bottom: 20px; }
+.logo-text    { display: flex; flex-direction: column; }
+.logo-title   { font-size: 24px; font-weight: 700; color: #fff !important; margin-bottom: 4px; }
+.logo-subtitle { font-size: 14px; color: #ecf0f1 !important; font-style: italic; }
+.footer-mission { font-size: 16px; line-height: 1.6; color: #ecf0f1; max-width: 300px; }
+
+/* Link columns wrapper */
+.footer-links { flex: 2; display: flex; justify-content: space-between; flex-wrap: wrap; gap: 30px; }
+.links-columns-wrapper { display: flex; flex-wrap: wrap; gap: 40px; }
+.links-column { min-width: 180px; }
+.links-title {
+	font-size: 18px; margin-bottom: 20px;
+	position: relative; padding-bottom: 10px; color: #fff;
+}
+/* Red underline accent beneath each column heading */
+.links-title::after {
+	content: ''; position: absolute; left: 0; bottom: 0;
+	width: 40px; height: 3px; background-color: #e74c3c;
+}
+.links-list { list-style: none; }
+.links-list li { margin-bottom: 12px; }
+.links-list a { color: #fff; text-decoration: none; transition: all 0.3s ease; display: inline-block; }
+.links-list a:hover { color: #e74c3c; transform: translateX(5px); }
+
+/* Contact info column */
+.contact-info li { display: flex; align-items: flex-start; margin-bottom: 15px; color: #fff; }
+.contact-info .icon { margin-right: 12px; color: #e74c3c; font-size: 16px; margin-top: 2px; }
+.contact-info a { color: #fff; text-decoration: none; transition: color 0.3s ease; }
+.contact-info a:hover { color: #e74c3c; }
+
+/* ── BOTTOM BAR: legal + newsletter + social ── */
+.footer-bottom {
+	border-top: 1px solid rgba(255,255,255,0.1); padding-top: 20px;
+	display: flex; flex-wrap: wrap; justify-content: space-between;
+	align-items: center; gap: 20px;
+}
+.footer-legal { display: flex; flex-wrap: wrap; align-items: center; gap: 15px; }
+.footer-legal p { color: #fff; margin: 0; }
+.legal-links { display: flex; gap: 15px; }
+.legal-links a { color: #fff; text-decoration: none; font-size: 14px; transition: color 0.3s ease; }
+.legal-links a:hover { color: #e74c3c; }
+
+/* Newsletter form */
+.footer-newsletter { flex: 1; max-width: 400px; }
+.footer-newsletter h4 { margin-bottom: 12px; color: #fff; font-size: 18px; }
+.newsletter-form { display: flex; gap: 10px; }
+.newsletter-form input {
+	flex: 1; padding: 12px 15px; border: none; border-radius: 4px;
+	background-color: rgba(255,255,255,0.1); color: #fff; outline: none;
+}
+.newsletter-form input::placeholder { color: #bdc3c7; }
+.newsletter-form button {
+	padding: 12px 20px; background-color: #e74c3c; color: #fff;
+	border: none; border-radius: 4px; cursor: pointer; transition: background-color 0.3s ease;
+}
+.newsletter-form button:hover { background-color: #c0392b; }
+
+/* Social icons */
+.footer-social { flex: 1; max-width: 300px; }
+.footer-social h4 { margin-bottom: 16px; color: #fff; font-size: 18px; }
+.footer-social .social-links { display: flex; justify-content: center; align-items: center; gap: 15px; }
+.social-link {
+	display: inline-flex; align-items: center; justify-content: center;
+	color: #fff; text-decoration: none; transition: all 0.3s ease;
+}
+.social-link:hover { transform: translateY(-3px); }
+.social-icon-img { width: 32px; height: 32px; object-fit: contain; display: block; }
+
+/* ── RESPONSIVE ── */
+@media (max-width: 768px) {
+	.footer-top { flex-direction: column; gap: 30px; }
+	.links-columns-wrapper { width: 100%; gap: 30px; }
+	.links-column { min-width: 100%; }
+	.footer-bottom { flex-direction: column; align-items: flex-start; gap: 30px; }
+	.newsletter-form { flex-direction: column; }
+	.newsletter-form input,
+	.newsletter-form button { width: 100%; }
+	.footer-newsletter, .footer-social { width: 100%; max-width: 100%; }
+	.footer-social .social-links { justify-content: flex-start; }
+}

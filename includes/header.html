@@ -31,8 +31,6 @@
                                         <ul class="dropdown">
                                             <li><a href="about.html#about">About Us</a></li>
                                             <li><a href="about.html#mission">Our Mission</a></li>
-                                            <li><a href="team.html">Our Team</a></li>
-                                            <li><a href="about.html#board">Board of Directors</a></li>
                                         </ul>
                                     </li>
                                     <li class="has-dropdown">
@@ -45,12 +43,12 @@
                                         </ul>
                                     </li>
                                     <li class="has-dropdown">
-                                        <a href="programs.html">Our Programs</a>
+                                        <a href="our-program.html">Our Programs</a>
                                         <ul class="dropdown">
-                                            <li><a href="programs.html#education">Education</a></li>
-                                            <li><a href="programs.html#healthcare">Healthcare</a></li>
-                                            <li><a href="programs.html#community">Community Development</a></li>
-                                            <li><a href="programs.html#youth">Youth Empowerment</a></li>
+                                            <li><a href="our-program.html#health">Education</a></li>
+                                            <li><a href="our-program.html#health">Healthcare</a></li>
+                                            <li><a href="our-program.html#economic">Community Development</a></li>
+                                            <li><a href="our-program.html#advocacy">Youth Empowerment</a></li>
                                         </ul>
                                     </li>
                                     <li class="has-dropdown">
@@ -59,23 +57,22 @@
                                             <li><a href="media.html#news">News & Updates</a></li>
                                             <li><a href="media.html#publications">Publications</a></li>
                                             <li><a href="media.html#gallery">Photo Gallery</a></li>
-                                            <li><a href="media.html#downloads">Downloads</a></li>
+                                            <li><a href="media.html#publications">Downloads</a></li>
                                         </ul>
                                     </li>
                                 </ul>  
                             </div>
 
                             <!-- Mobile Menu  -->
-                            <a class="navbar-toggler mobile-nav-toggler" onclick="toggleMobileMenu()">
+                            <button class="navbar-toggler mobile-nav-toggler" type="button" aria-controls="mobileMenu" aria-expanded="false" aria-label="Open Menu">
                                 <span class="icon flaticon-menu-1 fas fa-bars"></span>
-                            </a>
+                            </button>
                             <div class="mobile-menu" id="mobileMenu">
-                                <div class="menu-backdrop" onclick="toggleMobileMenu()"></div>
                                 <nav class="menu-box">
                                     <div class="nav-logo">
-                                        <a class="close-btn" onclick="toggleMobileMenu()" aria-label="Close Menu">
+                                        <button class="close-btn" type="button" aria-label="Close Menu">
                                             <span class="fas fa-times"></span>
-                                        </a>
+                                        </button>
                                     </div>
                                     <div class="menu-outer">
                                         <ul class="" id="menu_mobile">
@@ -83,13 +80,14 @@
                                             <li><a href="what-we-do.html">What We Do</a></li>
                                             <li><a href="our-program.html">Our Programs</a></li>
                                             <li><a href="media.html">Media + Resources</a></li>
-                                            <li><a href="contact.html">Contact Us</a></li>
-                                            <li><a href="opportunities.html">Opportunities</a></li>
-                                            <li><a href="get-involved.html" class="get-involved-btn">GET INVOLVED</a></li>
+                                            <li><a href="mailto:info@sherisesfoundation.co.ke?subject=Website%20Contact">Contact Us</a></li>
+                                            <li><a href="mailto:info@sherisesfoundation.co.ke?subject=Opportunities%20Inquiry">Opportunities</a></li>
+                                            <li><a href="mailto:info@sherisesfoundation.co.ke?subject=Get%20Involved" class="get-involved-btn">GET INVOLVED</a></li>
                                         </ul>
                                     </div>
                                 </nav>
                             </div> 
+                            <div class="menu-backdrop" hidden></div>
                             <!-- End Mobile Menu -->
                         </nav>
                     </div>

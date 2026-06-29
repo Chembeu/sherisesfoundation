@@ -64,7 +64,7 @@
 
 .sdg-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    grid-template-columns: repeat(4, 1fr);
     gap: 30px;
     margin-top: 40px;
 }
@@ -85,19 +85,17 @@
 }
 
 .sdg-icon {
-    margin-bottom: 25px;
+    margin-bottom: 0;
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
 .sdg-icon img {
-    width: 80px;
-    height: 80px;
-    object-fit: contain;
-    background: white;
-    border-radius: 50%;
-    padding: 10px;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    padding: 0;
 }
 
 .sdg-content {
@@ -136,19 +134,23 @@
 
 /* Card color variations - Using official UN SDG colors */
 .sdg-blue {
-    border-top: 4px solid #DDA63A; /* SDG 2 Zero Hunger - Official color */
+    background: #DDA63A; /* SDG 2 Zero Hunger - Official color */
+    color: #000;
 }
 
 .sdg-blue-alt {
-    border-top: 4px solid #FF3A21; /* SDG 5 Gender Equality - Official color */
+    background: #FF3A21; /* SDG 5 Gender Equality - Official color */
+    color: #fff;
 }
 
 .sdg-gray {
-    border-top: 4px solid #DD1367; /* SDG 10 Reduced Inequalities - Official color */
+    background: #DD1367; /* SDG 10 Reduced Inequalities - Official color */
+    color: #fff;
 }
 
 .sdg-dark {
-    border-top: 4px solid #3F7E44; /* SDG 13 Climate Action - Official color */
+    background: #3F7E44; /* SDG 13 Climate Action - Official color */
+    color: #fff;
 }
 
 /* Animations */
